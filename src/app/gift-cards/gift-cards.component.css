@@ -1,0 +1,71 @@
+.container2{
+    border: 0.5px solid #DCDFE5;
+}
+@media screen and (max-width:790px) and (min-width:700px){
+    .first-td{width:200px};
+    .second-td{width: 200px}
+}
+@media screen and (max-width:699px) and (min-width:650px) {
+    .first-td{width:100px};
+    .second-td{width: 100px}
+}
+@media screen and (max-width:400px) {
+    .first-td{width:40px};
+    .second-td{width: 40px};
+    .form-div{width:100px};
+    .container2{width: 40px}
+}
+.gift-heading{
+    margin-left: 10px;
+    border-bottom: 1px solid #dce0e6;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+}
+
+.first-td{
+    position: relative;left: 10px;
+}
+.second-td{
+    width: 400px;left: 80px;position: relative;
+}
+.sub-heading{
+    font-size: 2.1rem;font-weight: 600;line-height: 1.6;
+}
+.gift-para{
+    line-height: 1.8;color: #242A30;margin: 0 0 1.5rem 0;
+}
+.form-div{
+    width: 60%;
+}
+.gitft-label{
+font-weight: 300 !important;
+}
+.form-control{
+    width: 208px;
+    height: 46px;
+}
+.dollar-span{
+    margin-right: 10px;
+    top: 10px;
+    position: relative;  
+}
+.cancel-button{
+height: 48px;
+width : 120px
+}
+.purchase-button{
+width: 140px;
+height: 50px    
+}
+.hr{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid transparent;
+    border-top-color: #dce0e6;
+}
+.para{
+    line-height: 1.7;
+}
+.spacing{
+margin: 9px
+}

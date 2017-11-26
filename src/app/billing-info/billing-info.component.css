@@ -1,0 +1,17 @@
+.container2{
+    border: 0.5px solid #DCDFE5;
+    height: 462px;
+}
+.billing-label{
+    font-weight: 1 !important;
+}
+.billing-heading{
+    margin-left: 10px;
+    border-bottom: 1px solid #dce0e6;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+}
+.form-control{
+	height: 49px;
+	width: 59%
+}

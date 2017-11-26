@@ -1,0 +1,20 @@
+<div *ngIf="isAlexaEdit" class="container2">
+  <h3 class="alexa-edit-title">
+    Set Home
+  </h3>
+
+  <form>
+      <div style="margin-bottom: 26px;margin-left:15px" class="form-group">
+        <input style="height:47px;float: left;width: 75%;"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter home street address">
+        <input style="height: 47px;width: 160px;margin-left: 76%;"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Unit or Apt #">
+      </div>
+      <div style="margin-left:15px">
+          <button routerLink="app-alexa" (click)="cancel()" style="height: 49px;width: 120px;" type="button"  class="btn btn-default">Cancel</button>
+          <span style="margin-right:10px"></span>
+          <button style="height: 49px;width: 120px;" type="button" class="btn btn-success">Save</button>
+        </div>
+  </form>
+</div>
+<div *ngIf="isAlexa">
+  <app-alexa></app-alexa>
+</div>

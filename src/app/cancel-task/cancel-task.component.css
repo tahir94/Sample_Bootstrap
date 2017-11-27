@@ -42,3 +42,72 @@ a:hover{
 .link-div{
     margin-left: 20px;
 }
+/* @media screen and (max-width:369px) and(min-width:340px) { */
+@media all and (min-width: 1140px) {
+.container2{width: 90%}
+/* .div-para{width: 88%} */
+}
+@media screen and (max-width:1000px) and (min-width: 950px) {
+	.container2{width: 90%}
+	}
+@media screen and (max-width:950px) and (min-width: 900px) {
+		.container2{width: 87%}
+}
+@media screen and (max-width:900px) and (min-width: 850px) {
+		.container2{width: 84%}
+}
+@media screen and (max-width:850px) and (min-width: 800px) {
+	    .container2{width: 80%}
+}
+@media screen and (max-width:800px) and (min-width: 750px) {
+		.container2{width: 77%};
+		.cancel-image{width: 520px !important}
+}
+@media screen and (max-width:750px) and (min-width: 700px) {
+	.container2{width: 74%};
+	.cancel-image{width: 480px}
+}
+
+@media screen and (max-width:700px) and (min-width: 650px) {
+	.container2{width: 72%};
+	.cancel-image{width: 430px}
+}
+@media screen and (max-width:650px) and (min-width: 600px) {
+	.container2{width: 70%};
+	.cancel-image{width: 450px}
+}
+
+@media screen and (max-width:600px) and (min-width: 550px) {
+	.container2{width: 68%};
+	.cancel-image{width: 550px}
+}
+
+@media screen and (max-width:500px) and (min-width: 450px) {
+	.container2{width: 65%};
+	.cancel-image{width: 530px}
+}
+@media screen and (max-width:450px) and (min-width: 400px) {
+	.container2{width: 61%};
+	.cancel-image{width: 515px}
+}
+@media screen and (max-width:400px) and (min-width: 350px) {
+	.container2{width: 56%};
+	.cancel-image{width: 500px}
+}
+@media screen and (max-width:350px) and (min-width: 300px) {
+	.container2{width: 50%};
+	.cancel-image{width: 450px}
+}
+
+
+/* @media all and (min-width: 1100px) and (max-width: 1110) {
+	.container2{width: 88%;background: green}
+	/* .div-para{width: 80%} */
+	/* } */ 
+	@media all and (max-width: 1050px) and (min-width: 1000) {
+		.container2{width: 84%;background: blue}
+		/* .div-para{width: 75%} */
+		}
+@media all and (max-width: 1000px) and (min-width: 700px) {}
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {}

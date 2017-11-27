@@ -3,7 +3,7 @@
 <div class="row">
   <!--Nav Bar -->
   <nav id="nav" style="left: 17%;" class="col-xs-3 bs-docs-sidebar">
-      <ul style="width: 16%;border: 1px solid #DCDFE5;top: 27%;height: 55%;" id="sidebar" class="nav nav-stacked fixed">
+      <ul id="ul-list" style="width: 16%;border: 1px solid #DCDFE5;top: 27%;height: 462px;" id="sidebar" class="nav nav-stacked fixed">
           <li>
               <a [routerLink]="['app-profile']" tabindex="1" class="sidebar-links" (click)="profile()">Profile</a>
           </li>
@@ -37,7 +37,7 @@
       </ul>
   </nav>
   <!--Main Content -->
-  <div  style="position: relative;left: 8%;" class="col-xs-9">
+  <div style="position: relative;left: 8%;" class="col-xs-9">
       <section   *ngIf="isProfile" class="profile">
           <app-profile></app-profile>
       </section>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router,Routes,ActivatedRoute } from "@angular/router";
 declare var jquery: any;
 declare var $: any;
 @Component({
@@ -23,8 +23,13 @@ export class HomeComponent implements OnInit {
   isDeactivate: Boolean = false;
 
 
-  constructor(private router: Router) {
-
+  constructor(private router: Router,private activatedRoute:ActivatedRoute) {
+setTimeout(() =>{
+	console.log(this.router.url)
+	this.activatedRoute.params.subscribe((data)=> {
+	console.log('dddddddd',data)	
+})
+}, 2000);
     $('body').scrollspy({
       target: '.bs-docs-sidebar',
       offset: 40
@@ -89,6 +94,10 @@ export class HomeComponent implements OnInit {
     this.isDeactivate = false;
   }
   giftCards() {
+	console.log(this.router.url)	
+	if(this.router.url == '/'){
+console.log('asdsadsad')
+	}
     this.isGiftCards = true
 
     this.isProfile = false;

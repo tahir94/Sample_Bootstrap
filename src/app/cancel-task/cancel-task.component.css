@@ -42,40 +42,15 @@ a:hover{
 .link-div{
     margin-left: 20px;
 }
-/* @media screen and (max-width:369px) and(min-width:340px) { */
-@media all and (min-width: 1140px) {
-.container2{width: 90%}
-/* .div-para{width: 88%} */
-}
-@media screen and (max-width:1000px) and (min-width: 950px) {
-	.container2{width: 90%};
-	.cancel-image{width: 400px !important}
-	}
+
+ 
 @media screen and (max-width:950px) and (min-width: 900px) {
-		.container2{width: 87%};
-		.cancel-image{width: 400px !important}
+	.container2{width: 87%};
+	.cancel-image{width: 400px !important}
 }
 @media screen and (max-width:900px) and (min-width: 850px) {
-		.container2{width: 84%};
-		.cancel-image{width: 400px !important}
-}
-@media screen and (max-width:850px) and (min-width: 800px) {
-		.container2{width: 80%};
-		.cancel-image{min-width: 400px !important}
-}
-@media screen and (max-width:800px) and (min-width: 750px) {
-		.container2{width: 86%};
-		.cancel-image{width: 20% !important};
-		.div-image{min-width: 530px !important;background: green};
-}
-@media(max-width:730px) and (min-width: 770px) {
-	/* .container2{width: 86%}; */
-	.cancel-image{width: 500px !important};
-	.div-image{background: green};
-}
-@media screen and (max-width:750px) and (min-width: 700px) {
-	.container2{width: 80%};
-	.cancel-image{width: 400px}
+	.container2{width: 84%};
+	.cancel-image{width: 400px !important}
 }
 
 @media screen and (max-width:700px) and (min-width: 650px) {
@@ -92,27 +67,7 @@ a:hover{
 	.cancel-image{width: 400px}
 }
 
-@media screen and (max-width:500px) and (min-width: 450px) {
-	.container2{width: 65%};
-	.cancel-image{width: 400px}
-}
-@media screen and (max-width:450px) and (min-width: 400px) {
-	.container2{width: 61%};
-	.cancel-image{width: 400px}
-}
-@media screen and (max-width:400px) and (min-width: 350px) {
-	.container2{width: 56%};
-	.cancel-image{width: 400px}
-}
-@media screen and (max-width:350px) and (min-width: 300px) {
-	.container2{width: 50%};
-	.cancel-image{width: 400px}
-}
-@media screen and (max-width:250px) and (min-width: 300px) {
-	.container2{width: 50%};
-	.cancel-image{width: 400px};
-	.para{width: 34%;}
-}
+
 /* **************** */
 @media(max-width:755px){
 .cancel-image{width: 510px}
@@ -123,34 +78,33 @@ a:hover{
 }
 @media(max-width:550px){
 	.cancel-image{width: 440px}
-	}
-	@media(max-width:475px){
+}
+@media(max-width:475px){
 		
-		.cancel-image{width: 400px;}
-		}
-		@media(max-width:450px){
+     .cancel-image{width: 400px;}
+}
+@media(max-width:450px){
 			
-			.cancel-image{width: 370px;}
-			}
-			@media(max-width:415px){
+	.cancel-image{width: 370px;}
+}
+@media(max-width:415px){
 				
-				.cancel-image{width: 340px;}
-				}
-				@media(max-width:390px){
+	.cancel-image{width: 340px;}
+}
+@media(max-width:390px){
 					
-					.cancel-image{width: 310px;}
-					}	
-					@media(max-width:350px){
+	.cancel-image{width: 310px;}
+}	
+@media(max-width:350px){
 						
-						.cancel-image{width: 270px;}
-						}
+	.cancel-image{width: 270px;}
+}
 @media(max-width:300px){
 	.cancel-image{width: 217px;}
 }										
 /* for paragraph media query  */
 @media(max-width:550px){
 	.container2{width: 65%};
-	/* .cancel-image{width: 435px}; */
 	.para{width: 39% !important ;}
 }
 @media(max-width:480px){
@@ -159,7 +113,6 @@ a:hover{
 }
 @media(max-width:440px){
 	.container2{width: 55%};
-	/* .para{width: 35% !important ;} */
 }
 @media(max-width:405px){
 	.container2{width: 50%};
@@ -174,16 +127,3 @@ a:hover{
 @media(min-width:266px) and (max-width:300px){
 	.container2{width: 33%};
 }
-
-
-/* @media all and (min-width: 1100px) and (max-width: 1110) {
-	.container2{width: 88%;background: green}
-	/* .div-para{width: 80%} */
-	/* } */ 
-	@media all and (max-width: 1050px) and (min-width: 1000) {
-		.container2{width: 84%;background: blue}
-		/* .div-para{width: 75%} */
-		}
-@media all and (max-width: 1000px) and (min-width: 700px) {}
-
-@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {}

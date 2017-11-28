@@ -1,8 +1,21 @@
-<div class="container2">
-
+<div *ngIf="isProfile" class="container2">
+		<div id="mini-nav">
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-2">
+							<select (change)="navigateTo($event.target.value)" id="nav-select" style="	margin-left: 15px;
+							width: 690px;" class="form-control">
+								   <option></option>
+								  <option value="password" >Password</option>
+								</select>
+		
+						</div>
+					</div>
+				</div>
+			</div>
 <h1 class="profile-title">
-	<button style="	float: right;margin-right: 10px;height: 44px;width: 74px;bottom: 10px;position: relative;" type="button" class="btn btn-success btn-inverse">Edit</button>
-    <span>Account</span>			
+	<button id="edit-button" style="	float: right;margin-right: 10px;height: 44px;width: 74px;bottom: 10px;position: relative;" type="button" class="btn btn-success btn-inverse">Edit</button>
+    <span id="profile-heading">Account</span>			
 </h1>
 <!-- <hr> -->
 <!-- <div >	
@@ -13,31 +26,31 @@ height: 150px;" src="../../assets/default.jpg" alt="">
 	hello</div>  -->
 
 
-<div class="profile-container">
-	<div class="row">
+<div class="profile-container row">
+	<div class="row col-md-4">
 		<div class="col-md-6" style="width: 30%;">
 			<img id="profile-image" style="border-radius: 100px;
 					height: 150px;" src="../../assets/default.jpg" alt="">
 			<div style="margin-bottom:35px"></div>
 		</div>
 		<!-- username -->
-		<div id="userName" class="col-md-6 text-right" style="width: 40%">
+		<!-- <div id="userName"  style="width: 40%">
 
 			<i style="float:left" class="material-icons">person</i>
 
 			<span style="float:left">Tahir Mukhtar</span>
 			<div style="margin-bottom:35px"></div>
-		</div>
+		</div> -->
 		<!-- email -->
-		<div id="userEmail" class="col-md-6 text-right" style="width: 40%">
+		<!-- <div id="userEmail"  style="width: 40%">
 
 			<i style="float:left" class="material-icons">email</i>
 
 			<span style="float:left">tahirmukhtar.on@gmail.com</span>
 			<div style="margin-top:35px"></div>
-		</div>
+		</div> -->
 		<!-- location -->
-		<div id="location" class="col-md-6 text-right" style="width: 40%">
+		<!-- <div id="location"  style="width: 40%">
 
 			<i style="float:left" class="material-icons">location_on</i>
 
@@ -46,11 +59,50 @@ height: 150px;" src="../../assets/default.jpg" alt="">
 			<div style="margin-top:35px"></div>
 			<div style=" float: left;">
 					<button style="height: 48px;
-					width : 120px" class="cancel-button" type="button" class="btn btn-default">Log Out</button>
+					width : 120px" class="cancel-button" type="button" class="btn btn-default">Log Out</button> -->
 				<!-- <button type="button" class="btn btn-success btn-inverse">Log Out</button> -->
-			</div>
+			<!-- </div>
+		</div> -->
+			
+	</div>
+	<div id="profile-details" class="col-md-8">
+		<div style="display: flex;">
+			
+			<i  class="material-icons">person</i>
+			
+			<span>Tahir Mukhtar</span>
+			<div style="margin-bottom:35px"></div>
 		</div>
+		<!-- email -->
+		<div style="display: flex;">
+			
+				<i id="email" class="material-icons">email</i>
+			
+				<span>tahirmukhtar.on@gmail.com</span>
+				<div style="margin-top:35px"></div>
+		</div>
+		<!-- location-->
+		<div style="display: flex;">
+			
+					<i  class="material-icons">location_on</i>
+			
+					<span >74700</span>
+					<br>
+					<div ></div>
+				</div>
+				 <div id="div-button" style=" float: left;display:block !important">
+					<button id="signout-button" style="height: 48px;width : 120px" class="cancel-button" type="button" class="btn btn-default">Log Out</button> 
+					<!-- <button type="button" class="btn btn-success btn-inverse">Log Out</button> --> 
+				</div>
+		
 	</div>
 </div>
 
 </div>
+
+ <div *ngIf="isPassword">
+<app-password></app-password>
+
+ </div>
+
+ <!-- <button (click)="nav()">asdjasldjaslk </button> -->

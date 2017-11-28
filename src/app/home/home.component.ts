@@ -94,10 +94,11 @@ setTimeout(() =>{
     this.isDeactivate = false;
   }
   giftCards() {
+	  
 	console.log(this.router.url)	
-	if(this.router.url == '/'){
-console.log('asdsadsad')
-	}
+	// if(this.router.url == '/'){
+// console.log('asdsadsad')
+	// }
     this.isGiftCards = true
 
     this.isProfile = false;

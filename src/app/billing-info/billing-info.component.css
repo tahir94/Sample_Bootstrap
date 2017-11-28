@@ -15,3 +15,243 @@
 	height: 49px;
 	width: 59%
 }
+
+@media(max-width:1105px) and (min-width:1085px){
+    .container2{width: 98%};
+  }
+  @media(max-width:1085px) and (min-width:1065px){
+    .container2{width: 96%};
+  } 
+  @media(max-width:1065px) and (min-width:1045px){
+    .container2{width: 94%};
+  }
+  @media(max-width:1045px) and (min-width:1025px){
+    .container2{width: 88%};
+  }
+  @media(max-width:1025px) and (min-width:1000px){
+    .container2{width: 86%};
+  }
+  @media(max-width:1000px) and (min-width:980px){
+    .container2{width: 84%};
+  }
+  @media(max-width:980px) and (min-width:960px){
+    .container2{width: 82%};
+  }
+  @media(max-width:960px) and (min-width:940px){
+    .container2{width: 80%};
+  }
+  @media(max-width:940px) and (min-width:920px){
+    .container2{width: 78%};
+  }
+  @media(max-width:920px) and (min-width:900px){
+    .container2{width: 76%};
+  }
+  @media(max-width:900px) and (min-width:880px){
+    .container2{width: 74%};
+  }
+  @media(max-width:880px) and (min-width:860px){
+    .container2{width: 72%};
+  }
+  @media(max-width:860px) and (min-width:840px){
+    .container2{width: 70%};
+  }
+@media(max-width:840px) and (min-width:800px){
+    .container2{width: 68%};
+  }
+  @media(max-width:800px) and (min-width:790px){
+    .container2{width: 67%};
+  }
+  @media(max-width:790px) and (min-width:760px){
+    .container2{width: 96%};
+  }
+  @media(max-width:760px) and (min-width:720px){
+    .container2{width: 94%};
+  }
+  @media(max-width:720px) and (min-width:690px){
+    .container2{width: 88%};
+  }
+  @media(max-width:690px) and (min-width:660px){
+    .container2{width: 85%};
+  }
+  @media(max-width:660px) and (min-width:630px){
+    .container2{width: 80%};
+  }
+  @media(max-width:630px) and (min-width:600px){
+    .container2{width: 77%};
+  }
+  @media(max-width:599px) and (min-width:580px){
+    .container2{width: 75%};
+  }
+  @media(max-width:579px) and (min-width:580px){
+    .container2{width: 74%};
+  }
+  @media(max-width:589px) and (min-width:560px){
+    .container2{width: 72%};
+  }
+  @media(max-width:560px) and (min-width:530px){
+    .container2{width: 67%};
+  }
+  @media(max-width:529px) and (min-width:500px){
+    .container2{width: 63%};
+  }
+  @media(max-width:499px) and (min-width:480px){
+    .container2{width: 60%};
+  }
+  @media(max-width:480px) and (min-width:460px){
+    .container2{width: 57%};
+  }
+  @media(max-width:460px) and (min-width:440px){
+    .container2{width: 52%};
+  }
+  @media(max-width:440px) and (min-width:410px){
+    .container2{width: 49%};
+  }
+  @media(max-width:410px) and (min-width:370px){
+    .container2{width: 46%};
+  }
+  @media(max-width:370px) and (min-width:340px){
+    .container2{width: 42%};
+  }
+  @media(max-width:340px) and (min-width:310px){
+    .container2{width: 39%};
+  }
+  @media(max-width:310px) and (min-width:280px){
+    .container2{width: 36%};
+  }
+  @media(max-width:280px) and (min-width:266px){
+    .container2{width: 33%};
+  }
+
+
+  /* form form inputs */
+
+@media(max-width:1105px) and (min-width:1085px){
+    .container2{width: 98%};
+  }
+  @media(max-width:1085px) and (min-width:1065px){
+    .container2{width: 96%};
+  } 
+  @media(max-width:1065px) and (min-width:1045px){
+    .container2{width: 94%};
+  }
+  @media(max-width:1045px) and (min-width:1025px){
+    .container2{width: 88%};
+  }
+  @media(max-width:1025px) and (min-width:1000px){
+    .container2{width: 86%};
+  }
+  @media(max-width:1000px) and (min-width:980px){
+    .container2{width: 84%};
+  }
+  @media(max-width:980px) and (min-width:960px){
+    .container2{width: 82%};
+  }
+  @media(max-width:960px) and (min-width:940px){
+    .container2{width: 80%};
+  }
+  @media(max-width:940px) and (min-width:920px){
+    .container2{width: 78%};
+  }
+  @media(max-width:920px) and (min-width:900px){
+    .container2{width: 76%};
+  }
+  @media(max-width:900px) and (min-width:880px){
+    .container2{width: 74%};
+  }
+  @media(max-width:880px) and (min-width:860px){
+    .container2{width: 72%};
+  }
+  @media(max-width:860px) and (min-width:840px){
+    .container2{width: 70%};
+  }
+@media(max-width:840px) and (min-width:800px){
+    .container2{width: 68%};
+  }
+  @media(max-width:800px) and (min-width:790px){
+    .container2{width: 67%};
+  }
+  @media(max-width:790px) and (min-width:760px){
+    .container2{width: 96%};
+  }
+  @media(max-width:760px) and (min-width:720px){
+    .container2{width: 94%};
+  }
+  @media(max-width:720px) and (min-width:690px){
+    .container2{width: 88%};
+  }
+  @media(max-width:690px) and (min-width:660px){
+    .container2{width: 85%};
+  }
+  @media(max-width:660px) and (min-width:630px){
+    .container2{width: 80%};
+  }
+  @media(max-width:630px) and (min-width:600px){
+    .container2{width: 77%};
+  }
+  @media(max-width:599px) and (min-width:580px){
+    .container2{width: 75%};
+  }
+  @media(max-width:579px) and (min-width:580px){
+    .container2{width: 74%};
+  }
+  @media(max-width:589px) and (min-width:560px){
+    .container2{width: 72%};
+  }
+  @media(max-width:560px) and (min-width:530px){
+    .container2{width: 67%};
+  }
+  @media(max-width:529px) and (min-width:500px){
+    .container2{width: 63%};
+  }
+  @media(max-width:499px) and (min-width:480px){
+    .container2{width: 60%};
+  }
+  @media(max-width:480px) and (min-width:460px){
+    .container2{width: 57%};
+  }
+  @media(max-width:460px) and (min-width:440px){
+    .container2{width: 52%};
+  }
+  @media(max-width:440px) and (min-width:410px){
+    .container2{width: 49%};
+  }
+  @media(max-width:410px) and (min-width:370px){
+    .container2{width: 46%};
+  }
+  @media(max-width:370px) and (min-width:340px){
+    #form-container{width: 125% !important;};
+  }
+  @media(max-width:340px) and (min-width:310px){
+    .exampleInputEmail1{width: 125%;height: 40px};
+}
+  @media(max-width:310px) and (min-width:280px){
+    #form-container{width: 125% !important;};
+  }
+  @media(max-width:280px) and (min-width:266px){
+    #form-container{width: 125% !important;};
+  }
+  #input-field{width: auto}
+  @media(max-width:420px) and (min-width:400px){
+    /* #form-container{width: 85px !important;height:40px}; */
+    #input-field{width: 96%}    
+}
+  /* for cancel and save button */
+
+  #save-button{height: 49px;width: 120px !important};
+
+  @media(max-width:300px) and (min-width:330px){
+    #form-container{width: 95px !important;height:40px};
+  }
+  @media(max-width:300px)and (min-width:266px){
+    /* #form-container{width: 70px!important;height: 35px}; */
+    #cancel-button{width: 90px}  
+}
+ @media(max-width:266px){
+    /* #form-container{width: 70px!important;height: 35px}; */
+    #cancel-button{width: 90px}  
+}
+
+
+
+  
+  

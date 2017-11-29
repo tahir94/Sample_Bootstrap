@@ -1,4 +1,28 @@
 <div *ngIf="isAlexa" class="container2">
+		<div id="mini-nav">
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-2">
+							<select (change)="navigateTo($event.target.value)" id="nav-select" style="	margin-left: 15px;
+							width: 690px;" class="form-control">
+								   <option></option>
+								  <option value="profile" >Profile</option>
+								  <option value="password" >Password</option>
+								  <option value="notification" >Notifications</option>
+								  <option value="billingInfo" >Billing Info</option>
+								  <option value="giftCards" >Gift Cards</option>
+								  <option value="cancelTask" >Cancel A Task</option>
+								  <option value="accountBalaance" >Account Balance</option>
+								  <option value="transactions" >Transactions</option>
+								  <option value="alexa" >Alexa</option>
+								  <option value="deactivate" >Deactive</option>
+		
+								</select>
+		
+						</div>
+					</div>
+				</div>
+			</div>
 	<h3 class="alexa-title">
 		Alexa
 	</h3>
@@ -24,3 +48,23 @@
 	<div *ngIf="isAlexaEdit">
 			<app-alexa-edit></app-alexa-edit>
 	</div>
+
+
+
+	<div>
+			<div *ngIf="isPassword">
+		   <app-password></app-password>
+		   
+			</div>
+			<div *ngIf="isNotifications"><app-notifications></app-notifications></div>
+			<div *ngIf="isBillingInfo">
+				   <app-billing-info></app-billing-info> 
+			</div>
+			<div *ngIf="isProfile"><app-profile></app-profile></div>
+			<div *ngIf="isGiftCards"><app-gift-cards></app-gift-cards></div>
+			<div *ngIf="isCancelTask"><app-cancel-task></app-cancel-task></div>
+			<div *ngIf="isAccountBalance"><app-account-balance></app-account-balance></div>
+			<div *ngIf="isTransactions"><app-transactions></app-transactions></div>
+			<!-- <div *ngIf="isAlexa"><app-alexa></app-alexa></div> -->
+			<div *ngIf="isDeactivate"><app-deactive></app-deactive></div>
+		   </div>

@@ -3,7 +3,7 @@
     /* width: 200px; */
     height: 500px;
     width: 720px;
-    top: 27%;
+    /* top: 27%; */
     position:fixed
 }
 /* @media screen and (min-width:790px) {
@@ -42,12 +42,12 @@
   }
 .profile{
     width: 720px;
-    top: 27%;
+    /* top: 27%; */
     position:fixed
 }
 .gift-cards{
     width: 735px;
-    top: 27%;
+    /* top: 27%; */
     position:fixed 
 }
 .group .subgroup {
@@ -116,7 +116,8 @@
 
 .sidebar-links{
     cursor: pointer;
-    line-height: 2.5em;
+	line-height: 2.5em;
+	outline:none
 }
 
 #sidebar a:focus{

@@ -1,6 +1,7 @@
 .container2{
 	border: 0.5px solid #DCDFE5;
 	height: 462px;
+	margin-bottom:20px
 }
 
 .profile-title{
@@ -268,7 +269,7 @@
 	display: none;
 	text-align: center;
 	position: relative;
-	top: 220px;
+	top: 10px;
 	height: 40px;
 }
 /* mini mav */
@@ -419,7 +420,7 @@
 
   @media(max-width:775px){
 	
-	#nav-select{ position: relative;bottom: 210px;margin-left:10px ;width: 670px;};
+	#nav-select{ position: relative;margin-left:10px ;width: 670px;};
 
   }
   @media(max-width:775px){

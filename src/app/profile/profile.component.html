@@ -6,7 +6,17 @@
 							<select (change)="navigateTo($event.target.value)" id="nav-select" style="	margin-left: 15px;
 							width: 690px;" class="form-control">
 								   <option></option>
+								  <option value="profile" >Password</option>
 								  <option value="password" >Password</option>
+								  <option value="notification" >Password</option>
+								  <option value="billingInfo" >Password</option>
+								  <option value="giftCards" >Password</option>
+								  <option value="cancelTask" >Password</option>
+								  <option value="accountBalaance" >Password</option>
+								  <option value="transactions" >Password</option>
+								  <option value="alexa" >Password</option>
+								  <option value="deactivate" >Password</option>
+
 								</select>
 		
 						</div>
@@ -99,11 +109,22 @@ height: 150px;" src="../../assets/default.jpg" alt="">
 </div>
 
 </div>
-
+<div>
  <div *ngIf="isPassword">
 	 <!-- <app-home></app-home> -->
 <app-password></app-password>
 
  </div>
-
+ <div *ngIf="isPassword"></div>
+ <div *ngIf="isNotifications"><app-notifications></app-notifications></div>
+ <div *ngIf="isBillingInfo">
+		<app-billing-info></app-billing-info> 
+ </div>
+ <div *ngIf="isGiftCards"><app-gift-cards></app-gift-cards></div>
+ <div *ngIf="isCancelTask"><app-cancel-task></app-cancel-task></div>
+ <div *ngIf="isAccountBalance"><app-account-balance></app-account-balance></div>
+ <div *ngIf="isTransactions"><app-transactions></app-transactions></div>
+ <div *ngIf="isAlexa"><app-alexa></app-alexa></div>
+ <div *ngIf="isDeactivate"><app-deactive></app-deactive></div>
+</div>
  <!-- <button (click)="nav()">asdjasldjaslk </button> -->

@@ -50,7 +50,7 @@ navigateTo(event){
 			this.isAlexa = false;
 			this.isDeactivate = false;
 		
-			return;
+			break;
 	  case 'password':
 	  console.log('password',this.router.url);
 	  
@@ -68,7 +68,7 @@ navigateTo(event){
       this.isAlexa = false;
       this.isDeactivate = false;
   
-	  return;
+	  break;
       case 'notification':
       this.router.navigate(['home/app-notifications']);
       
@@ -83,7 +83,7 @@ navigateTo(event){
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-		  return;
+		  break;
       case 'billingInfo':
       this.router.navigate(['home/app-billing-info']);
       
@@ -98,7 +98,7 @@ navigateTo(event){
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-		  return;
+		  break;
       case 'giftCards':
       this.router.navigate(['home/app-gift-cards']);
       
@@ -113,7 +113,7 @@ navigateTo(event){
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-		  return;
+		  break;
       case 'cancelTask':
       this.router.navigate(['home/app-cancel-task']);
       
@@ -128,7 +128,7 @@ navigateTo(event){
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-		return;
+		break;
       case 'accountBalaance':
       this.router.navigate(['home/app-account-balance']);
       
@@ -143,7 +143,7 @@ navigateTo(event){
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-		  return;
+		  break;
       case 'transactions':
       this.router.navigate(['home/app-transactions']);
       
@@ -158,7 +158,7 @@ navigateTo(event){
           this.isAccountBalance = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-		  return;
+		  break;
 	  case 'alexa':
 	  console.log(event);
 	  
@@ -175,7 +175,7 @@ navigateTo(event){
           this.isAccountBalance = false;
           this.isTransactions = false;
           this.isDeactivate = false;
-		  return;
+		  break;
       case 'deactivate':
       this.router.navigate(['home/app-deactive']);
        console.log('deactive');
@@ -191,7 +191,7 @@ navigateTo(event){
           this.isAccountBalance = false;
           this.isTransactions = false;
           this.isAlexa = false;
-		  return;
+		  break;
       default:
       return null;	
     }

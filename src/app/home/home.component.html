@@ -16,11 +16,11 @@
 			</div> -->
 				  
 	
-<div  class="row">
+<div  class="container col-lg-8 col-md-8 center-block" style="float: none;">
 	
   <!--Nav Bar -->
-  <nav id="nav" style="left: 17%;" class="col-xs-3 bs-docs-sidebar">
-      <ul id="ul-list" style="width: 16%;border: 1px solid #DCDFE5;" [ngStyle]="{'height': isClicked ? '609px' : '462px'}" id="sidebar" class="nav nav-stacked fixed">
+  <div id="nav" class="col-xs-3 bs-docs-sidebar hidden-xs hidden-sm">
+      <ul id="ul-list" style="border: 1px solid #DCDFE5;" [ngStyle]="{'height': isClicked ? '609px' : '462px'}" id="sidebar" class="nav nav-stacked">
           <li>
               <a [routerLink]="['app-profile']" tabindex="1" class="sidebar-links" (click)="profile()">Profile</a>
           </li>
@@ -52,10 +52,10 @@
               <a [routerLink]="['app-deactive']" tabindex="1" class="sidebar-links" (click)="deactive()">Deactive</a>
           </li>
       </ul>
-  </nav>
+	</div>
   <!--Main Content -->
-  <div style="position: relative;left: 8%;margin-top:20px" class="col-xs-9">
-      <section   *ngIf="isProfile" class="profile">
+  <div style="position: relative;margin-top:20px" class="col-xs-9">
+      <section   *ngIf="isProfile">
           <app-profile></app-profile>
       </section>
       <section id="GroupB" *ngIf="isPassword" class="group">

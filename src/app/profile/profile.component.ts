@@ -30,6 +30,24 @@ export class ProfileComponent implements OnInit {
   navigateTo(event){
 	console.log(event);
 	switch(event){
+
+		case 'profile':
+		this.router.navigate(['home/app-profile']);
+		
+			  this.isProfile = true;
+			  
+			this.isPassword = false;	  
+			this.isNotifications = false;
+			this.isBillingInfo = false;
+			this.isGiftCards = false;
+			this.isCancelTask = false;
+			this.isAccountBalance = false;
+			this.isTransactions = false;
+			this.isAlexa = false;
+			this.isDeactivate = false;
+		
+			break;
+
 		case 'password':
 		this.router.navigate(['home/password']);
 
@@ -90,6 +108,7 @@ export class ProfileComponent implements OnInit {
 				this.isTransactions = false;
 				this.isAlexa = false;
 				this.isDeactivate = false;
+				break;
 
 		case 'cancelTask':
 		this.router.navigate(['home/app-cancel-task']);
@@ -105,7 +124,7 @@ export class ProfileComponent implements OnInit {
 				this.isTransactions = false;
 				this.isAlexa = false;
 				this.isDeactivate = false;
-
+				break;
 		case 'accountBalaance':
 		this.router.navigate(['home/app-account-balance']);
 		
@@ -120,7 +139,7 @@ export class ProfileComponent implements OnInit {
 				this.isTransactions = false;
 				this.isAlexa = false;
 				this.isDeactivate = false;
-
+				break;
 		case 'transactions':
 		this.router.navigate(['home/app-transactions']);
 		
@@ -135,7 +154,7 @@ export class ProfileComponent implements OnInit {
 				this.isAccountBalance = false;
 				this.isAlexa = false;
 				this.isDeactivate = false;
-
+				break;
 		case 'alexa':
 		this.router.navigate(['home/app-alexa']);
 		
@@ -150,7 +169,7 @@ export class ProfileComponent implements OnInit {
 				this.isAccountBalance = false;
 				this.isTransactions = false;
 				this.isDeactivate = false;
-
+				break;
 		case 'deactivate':
 		this.router.navigate(['home/app-deactive']);
 		
@@ -165,7 +184,7 @@ export class ProfileComponent implements OnInit {
 				this.isAccountBalance = false;
 				this.isTransactions = false;
 				this.isAlexa = false;
-
+				break;
 		default:
 		return null;	
 	}

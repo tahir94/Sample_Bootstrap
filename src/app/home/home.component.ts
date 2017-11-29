@@ -22,6 +22,8 @@ export class HomeComponent implements OnInit {
   isAlexa: Boolean = false;
   isDeactivate: Boolean = false;
 
+  isClicked : Boolean = false;
+
 
   constructor(private router: Router,private activatedRoute:ActivatedRoute) {
 setTimeout(() =>{
@@ -50,8 +52,12 @@ setTimeout(() =>{
     this.isAccountBalance = false;
     this.isTransactions = false;
     this.isAlexa = false;
-    this.isDeactivate = false;
+	this.isDeactivate = false;
+	
+	this.isClicked = false;
   }
+
+  
   password() {
     this.isPassword = true;
 
@@ -64,7 +70,9 @@ setTimeout(() =>{
     this.isAccountBalance = false;
     this.isTransactions = false;
     this.isAlexa = false;
-    this.isDeactivate = false;
+	this.isDeactivate = false;
+	
+	this.isClicked = false;
   }
   notifications() {
     this.isNotifications = true;
@@ -77,28 +85,31 @@ setTimeout(() =>{
     this.isAccountBalance = false;
     this.isTransactions = false;
     this.isAlexa = false;
-    this.isDeactivate = false;
+	this.isDeactivate = false;
+	
+	this.isClicked = false;
   }
 
   billingInfo() {
-    this.isBillingInfo = true
-
-    this.isProfile = false;
-    this.isPassword = false;
-    this.isNotifications = false;
-    this.isGiftCards = false;
-    this.isCancelTask = false;
-    this.isAccountBalance = false;
-    this.isTransactions = false;
-    this.isAlexa = false;
-    this.isDeactivate = false;
-  }
-  giftCards() {
+	  this.isBillingInfo = true
 	  
-	console.log(this.router.url)	
-	// if(this.router.url == '/'){
-// console.log('asdsadsad')
-	// }
+	  this.isProfile = false;
+	  this.isPassword = false;
+	  this.isNotifications = false;
+	  this.isGiftCards = false;
+	  this.isCancelTask = false;
+	  this.isAccountBalance = false;
+	  this.isTransactions = false;
+	  this.isAlexa = false;
+	  this.isDeactivate = false;
+	  
+	  this.isClicked = false;
+	}
+
+  giftCards() {
+
+
+	this.isClicked = true;
     this.isGiftCards = true
 
     this.isProfile = false;
@@ -122,7 +133,9 @@ setTimeout(() =>{
     this.isAccountBalance = false;
     this.isTransactions = false;
     this.isAlexa = false;
-    this.isDeactivate = false;
+	this.isDeactivate = false;
+	
+	this.isClicked = false;
 
   }
   accountBalance() {
@@ -136,7 +149,9 @@ setTimeout(() =>{
     this.isCancelTask = false;
     this.isTransactions = false;
     this.isAlexa = false;
-    this.isDeactivate = false;
+	this.isDeactivate = false;
+	
+	this.isClicked = false;
   }
   transactions() {
     this.isTransactions = true;
@@ -149,7 +164,9 @@ setTimeout(() =>{
     this.isCancelTask = false;
     this.isAccountBalance = false;
     this.isAlexa = false;
-    this.isDeactivate = false;
+	this.isDeactivate = false;
+	
+	this.isClicked = false;
   }
   alexa() {
     this.isAlexa = true;
@@ -162,7 +179,9 @@ setTimeout(() =>{
     this.isCancelTask = false;
     this.isAccountBalance = false;
     this.isTransactions = false;
-    this.isDeactivate = false;
+	this.isDeactivate = false;
+	
+	this.isClicked = false;
   }
   deactive() {
     this.isDeactivate = true;
@@ -175,7 +194,9 @@ setTimeout(() =>{
     this.isCancelTask = false;
     this.isAccountBalance = false;
     this.isTransactions = false;
-    this.isAlexa = false;
+	this.isAlexa = false;
+	
+	this.isClicked = false;
 
   }
 }

@@ -1,1 +1,191 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.root-container{
+    padding: 20px;
+    border: 0.5px solid #DCDFE5;
+    height: 463px;
+    position: relative;
+    right: 30px;
+}
+
+/* for description */
+@media(max-width:615px) and (min-width:515px){
+    #profile-description{
+        float: right;
+        padding-left: 20px;
+        position: relative;
+        top: 200px
+    }
+   
+}
+@media(max-width:515px) and (min-width:415px){
+    #profile-description{
+        right: 80px;
+        padding-left: 20px;
+        position: relative;
+        top: 200px
+    }
+   
+}
+@media(max-width:415px) and (min-width:370px){
+    #profile-description{
+        right: 80px;
+        padding-left: 20px;
+        position: relative;
+        top: 200px
+    }
+   
+}
+@media(max-width:370px) and (min-width:335px){
+    #profile-description{
+        right: 100px;
+        padding-left: 20px;
+        position: relative;
+        top: 200px
+    }
+   
+}
+@media(max-width:335px) and (min-width:300px){
+    #profile-description{
+        right: 120px;
+        padding-left: 20px;
+        position: relative;
+        top: 200px
+    }
+   
+}
+@media(max-width:330px) and (min-width:250px){
+    #profile-description{
+        right: 140px;
+        padding-left: 20px;
+        position: relative;
+        top: 200px
+    }
+   
+}
+/* for profile image */
+@media(max-width:615px) and (min-width:515px){
+    #profile-img-container{
+        position: relative;
+        left: 35%;
+        overflow: inherit !important;
+}
+}
+@media(max-width:515px) and (min-width:415px){
+        #profile-img-container{
+          position: relative;
+          left: 30%;
+          overflow: inherit !important;
+        }
+}
+@media(max-width:415px) and (min-width:315px){
+    #profile-img-container{
+      position: relative;
+      left: 25%;
+      overflow: inherit !important;
+    }
+}
+@media(max-width:315px) and (min-width:250px){
+    #profile-img-container{
+      position: relative;
+      left: 20%;
+      overflow: inherit !important;
+    }
+}
+
+/* for profile-root     */
+    @media(max-width:615px) and (min-width:555px){
+        .root-container{
+
+            padding: 20px;
+            border: 0.5px solid #DCDFE5;
+            height: 660px;
+            position: relative;
+            width: 440px;
+            right: 0;
+        }
+}
+@media(max-width:555px) and (min-width:500px){
+    .root-container{
+        margin-left: 10px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 670px;
+        position: relative;
+        right: 30px;
+        width: 420px;
+    }
+}
+
+@media(max-width:500px) and (min-width:450px){
+    .root-container{
+        /* padding: 20px; */
+        /* border: 0.5px solid #DCDFE5; */
+        height: 660px;
+        position: relative;
+        width: 400px;
+        /* right: 0; */
+    }
+}
+@media(max-width:450px) and (min-width:420px){
+    .root-container{
+        margin-left: 10px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 670px;
+        position: relative;
+        right: 30px;
+        width: 370px;
+    }
+}
+@media(max-width:420px) and (min-width:390px){
+    .root-container{
+        margin-left: 10px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 670px;
+        position: relative;
+        right: 30px;
+        width: 390px;
+    }
+}
+@media(max-width:390px) and (min-width:350px){
+    .root-container{
+        margin-left: 22px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 610px;
+        position: relative;
+        right: 30px;
+        width: 310px;
+    }
+}
+
+@media(max-width:350px) and (min-width:300px){
+    .root-container{
+        margin-left: 10px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 670px;
+        position: relative;
+        right: 30px;
+        width: 290px;
+    }
+}
+
+@media(max-width:300px) and (min-width:250px){
+    .root-container{
+        margin-left: 10px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 870px;
+        position: relative;
+        right: 30px;
+        width: 380px;
+    }
+}
+
+
+
+

@@ -1,4 +1,4 @@
-<div *ngIf="isNotifications" class="container">
+<div *ngIf="isNotifications" class="container2">
 <div id="mini-nav">
 		<div class="row">
 			<div class="form-group">
@@ -28,7 +28,7 @@
 		Notifications
 	</h2>
 	<hr>
-	<table style="width : 60%" class="table">
+	<table id="notify-table" class="table">
 		<thead>
 			<tr>
 				<!-- <th scope="col">#</th> -->
@@ -78,27 +78,34 @@
 
 		</tbody>
 	</table>
-	<div>
+	<div id="div-container">
 		<button style="height: 40px;width: 17%;" type="button" class="btn btn-default">Cancel</button>
 		<span style="margin-right:10px"></span>
 		<button style="height: 40px;width: 17%;" type="button" class="btn btn-success">Save</button>
 	</div>
 </div>
+
 <div>
-		<div *ngIf="isPassword">
+<div *ngIf="isPassword"> 
+	<app-password></app-password> 
+<!-- <app-password></app-password> -->
+</div>
+<!-- <div> -->
+		<!-- <div *ngIf="isPassword"> -->
 			<!-- <app-home></app-home> -->
-	   <app-password></app-password>
+	   <!-- <app-password></app-password>-->
 	   
-		</div>
-		<div *ngIf="isPassword"></div>
-		<div *ngIf="isNotifications"><app-notifications></app-notifications></div>
+		
+		<!-- <div *ngIf="isPassword"></div> -->
+		<!-- <div *ngIf="isNotifications"><app-notifications></app-notifications></div> -->
 		<div *ngIf="isBillingInfo">
 			   <app-billing-info></app-billing-info> 
 		</div>
+		<div *ngIf="isProfile"><app-profile></app-profile></div>
 		<div *ngIf="isGiftCards"><app-gift-cards></app-gift-cards></div>
 		<div *ngIf="isCancelTask"><app-cancel-task></app-cancel-task></div>
 		<div *ngIf="isAccountBalance"><app-account-balance></app-account-balance></div>
 		<div *ngIf="isTransactions"><app-transactions></app-transactions></div>
-		<div *ngIf="isAlexa"><app-alexa></app-alexa></div>
-		<div *ngIf="isDeactivate"><app-deactive></app-deactive></div>
-	   </div>
+		<div *ngIf="isAlexa"><app-alexa></app-alexa></div> 
+       <div *ngIf="isDeactivate"><app-deactive></app-deactive></div> 
+	   </div> 

@@ -23,7 +23,27 @@ export class NotificationsComponent implements OnInit {
   navigateTo(event){
     console.log(event);
     switch(event){
-      case 'password':
+
+		case 'profile':
+		this.router.navigate(['home/app-profile']);
+		
+			  this.isProfile = true;
+			  
+			this.isPassword = false;	  
+			this.isNotifications = false;
+			this.isBillingInfo = false;
+			this.isGiftCards = false;
+			this.isCancelTask = false;
+			this.isAccountBalance = false;
+			this.isTransactions = false;
+			this.isAlexa = false;
+			this.isDeactivate = false;
+		
+			break;
+
+	  case 'password':
+	  console.log('password',this.router.url);
+	  
       this.router.navigate(['home/password']);
   
       this.isPassword = true;
@@ -38,7 +58,7 @@ export class NotificationsComponent implements OnInit {
       this.isAlexa = false;
       this.isDeactivate = false;
   
-  
+	  break;
       case 'notification':
       this.router.navigate(['home/app-notifications']);
       
@@ -53,7 +73,7 @@ export class NotificationsComponent implements OnInit {
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-  
+		  break;
       case 'billingInfo':
       this.router.navigate(['home/app-billing-info']);
       
@@ -68,7 +88,7 @@ export class NotificationsComponent implements OnInit {
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-  
+		  break;
       case 'giftCards':
       this.router.navigate(['home/app-gift-cards']);
       
@@ -83,7 +103,7 @@ export class NotificationsComponent implements OnInit {
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-  
+		  break;
       case 'cancelTask':
       this.router.navigate(['home/app-cancel-task']);
       
@@ -98,7 +118,7 @@ export class NotificationsComponent implements OnInit {
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-  
+		break;
       case 'accountBalaance':
       this.router.navigate(['home/app-account-balance']);
       
@@ -113,7 +133,7 @@ export class NotificationsComponent implements OnInit {
           this.isTransactions = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-  
+		  break;
       case 'transactions':
       this.router.navigate(['home/app-transactions']);
       
@@ -128,8 +148,10 @@ export class NotificationsComponent implements OnInit {
           this.isAccountBalance = false;
           this.isAlexa = false;
           this.isDeactivate = false;
-  
-      case 'alexa':
+		  break;
+	  case 'alexa':
+	  console.log(event);
+	  
       this.router.navigate(['home/app-alexa']);
       
           this.isAlexa = true;
@@ -143,10 +165,11 @@ export class NotificationsComponent implements OnInit {
           this.isAccountBalance = false;
           this.isTransactions = false;
           this.isDeactivate = false;
-  
+		  break;
       case 'deactivate':
       this.router.navigate(['home/app-deactive']);
-      
+       console.log('deactive');
+	   
       this.isDeactivate = true;
          
       this.isPassword = false;
@@ -158,7 +181,7 @@ export class NotificationsComponent implements OnInit {
           this.isAccountBalance = false;
           this.isTransactions = false;
           this.isAlexa = false;
-  
+		  break;
       default:
       return null;	
     }

@@ -1,6 +1,7 @@
 .container2{
 	border: 0.5px solid #DCDFE5;
 	height: 462px;
+	margin-bottom:20px
 }
 
 .profile-title{
@@ -162,7 +163,7 @@
 
 
 	/* media query */
-@media(max-width:1102px){
+/* @media(max-width:1102px){
 	.container2{width:98%}
 	}
 
@@ -263,23 +264,23 @@
 		width: 680px;
 	}
 	
-}
+} */
 #mini-nav{
 	display: none;
 	text-align: center;
 	position: relative;
-	top: 220px;
-	height: 40px;
+	top: 10px;
+	/* height: 40px; */
 }
 /* mini mav */
-@media(max-width:790px) {
+/* @media(max-width:790px) {
 	#mini-nav{display: inline-block;};
 	
   }
-  @media(max-width:790px){
+  @media(max-width:790px){ */
 	/* #nav-select{margin-left: 18px; position: relative;bottom: 210px;width: 680px} */
 	/* #nav-select{ position: relative;bottom: 210px;margin-left: ;width: 670px;}; */
-	#nav-select{width:670px !important}
+	/* #nav-select{width:670px !important}
   }
   @media(max-width:760px) {
 	#nav-select{width:660px !important}
@@ -345,10 +346,10 @@
   @media(max-width:460px) {
 	#nav-select{width:320px !important}
 	
-  }
+  } */
   /* for edit button */
   
-  @media(max-width:380px) {
+  /* @media(max-width:380px) {
 	#edit-button{right: 20px;position: relative}
 	
   }
@@ -363,15 +364,15 @@
   @media(max-width:300px) {
 	#edit-button{right: 80px;position: relative}
 	
-  }
+  } */
   /* ********************* */
   /* for overl container */
-  @media(max-width:460px) {
+  /* @media(max-width:460px) { */
 	/* #edit-button{right: 55px;position: relative} */
 	
-  }
+  /* } */
 /* *************** */
-  @media(max-width:440px) {
+  /* @media(max-width:440px) {
 	#nav-select{width:300px !important}
 	
   }
@@ -419,24 +420,24 @@
 
   @media(max-width:775px){
 	
-	#nav-select{ position: relative;bottom: 210px;margin-left:10px ;width: 670px;};
+	#nav-select{ position: relative;margin-left:10px ;width: 670px;};
 
   }
   @media(max-width:775px){
 	
 	#nav-select{width: 650px;};
 
-  }
+  } */
 /* for show container at 790 */
-@media(max-width:790px){
+/* @media(max-width:790px){
 	#profile-sub-container{
 		display: inline-block;
 		margin-top: 25px;
 	}
-}
+} */
 
 /* for profile width */
-@media(max-width:790px){
+/* @media(max-width:790px){
 	.container2{width: 98%};
 }
 @media(max-width:790px){
@@ -450,13 +451,13 @@
 @media(max-width:266px){
 	
 		#div-button{position: relative;left:-55px}
-}
+} */
 /* @media(max-width:266px){
 	
 		#div-button{position: relative;left:-55px}
 } */
 /* for profile details */
-@media(max-width:790px){
+/* @media(max-width:790px){
 
 	#profile-details{position: relative;left:140px;bottom: 10px}
 }
@@ -534,7 +535,7 @@
 }
 		 @media(max-width:460px){
 			.container2{width: 48% !important}
-		}
+		} */
 
 /*@media(max-width:580px){
 	.container2{width: 56%}
@@ -546,7 +547,7 @@
 	.container2{width: 52%}
 } */
 
-	@media(max-width:475px){
+	/* @media(max-width:475px){
 			.container2{width: 58%};
 			#input{width: 94%}
 
@@ -583,17 +584,17 @@
 	}
 	@media(max-width:266px){
 			.container2{width: 32%};
-	}
+	} */
 	/* form email icon */
-	@media(max-width:266px){
+	/* @media(max-width:266px){
 		#email{margin-left: -14px;} 
-}
+} */
 /* for profile heading */
-@media(max-width:266px){
+/* @media(max-width:266px){
 	#profile-heading{font-size: 30px;} 
-}
+} */
 /* for signout button */
-@media(max-width:266px){
+/* @media(max-width:266px){
 	#signout-button{
 		position: absolute;
 		left: calc( (100vw - 144px) / 2 );
@@ -602,8 +603,8 @@
 	
 									
 
-	@media(max-width:460px){
+	@media(max-width:460px){ */
 			/* .container2{width: 56%}; */
-			#input{width: 92%}  
-	}
+			/* #input{width: 92%}   */
+	/* } */
 	

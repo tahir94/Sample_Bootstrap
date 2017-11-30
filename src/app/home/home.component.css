@@ -1,14 +1,9 @@
 .group {
-    /* background: yellow; */
-    /* width: 200px; */
     height: 500px;
     width: 720px;
-    /* top: 27%; */
     position:fixed
 }
-/* @media screen and (width:665px) {
-    .group { display: inline-block; }
-  } */
+
   #mini-nav{
 	  display: none;
 	  text-align: center;
@@ -25,30 +20,13 @@
 	margin-left: 75px;
     width: 670px;
   }
-  /* @media screen and (max-width:790px) {
-	#nav { display:none; };
-  }
-  @media screen and (max-width:790px) {
-	#demo { display:inline-block; };
-  }
-  @media screen and (max-width:790px) {
-	#nav { display:none; };
-  }
-  @media screen and (max-width:790px) {
-	#mini-nav{display: block}
-  }
-  @media screen and (min-height:700px) and (max-height:800px) {
-    #nav:after {height: 100%;background: red };
-  } */
+
+
 .profile{
     width: 720px;
-    /* top: 27%; */
-    /* position:fixed */
 }
 .gift-cards{
     width: 735px;
-    /* top: 27%; */
-    /* position:fixed  */
 }
 .group .subgroup {
     background: orange;
@@ -134,6 +112,10 @@
     line-height: 1.2;
     left: 18%;
     position: relative;
+}
+
+.m10{
+	margin: 10px;
 }
 
 

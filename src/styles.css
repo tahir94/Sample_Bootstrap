@@ -1,12 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-.root-container{
-    padding: 20px;
-    border: 0.5px solid #DCDFE5;
-    height: 463px;
-    position: relative;
-    right: 30px;
+#root-container{
+    border: 0.5px solid #99B0DE;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* for description */
@@ -57,7 +56,7 @@
 }
 @media(max-width:330px) and (min-width:250px){
     #profile-description{
-        right: 140px;
+        right: 100px;
         padding-left: 20px;
         position: relative;
         top: 200px
@@ -95,21 +94,177 @@
 }
 
 /* for profile-root     */
-@media(max-width:770px) and (min-width:615px){
+
+@media(max-width:987px) and (min-width:945px){
     .root-container{
-        margin-left: 10px;
+		margin-left: 10px;
+		width: 755px !important;
+ 
+	}
+}
+@media(max-width:965px) and (min-width:945px){
+    .root-container{
+		margin-left: 10px;
+		width: 735px !important;
+ 
+	}
+}
+@media(max-width:945px) and (min-width:925px){
+    .root-container{
+		margin-left: 10px;
+		width: 915px !important;
+ 
+	}
+}
+@media(max-width:925px) and (min-width:905px){
+    .root-container{
+		margin-left: 10px;
+		width: 895px !important;
+ 
+	}
+}
+@media(max-width:905px) and (min-width:890px){
+    .root-container{
+		margin-left: 10px;
+		width: 875px !important;
+ 
+	}
+}
+@media(max-width:890px) and (min-width:870px){
+    .root-container{
+		margin-left: 10px;
+		width: 855px !important;
+ 
+	}
+}
+@media(max-width:870px) and (min-width:850px){
+    .root-container{
+		margin-left: 10px;
+		width: 835px !important;
+ 
+	}
+}
+@media(max-width:850px) and (min-width:830px){
+    .root-container{
+		margin-left: 10px;
+		width: 815px !important;
+ 
+	}
+}
+@media(max-width:870px) and (min-width:830px){
+    .root-container{
+		margin-left: 10px;
+		width: 795px !important;
+ 
+	}
+}
+@media(max-width:830px) and (min-width:810px){
+    .root-container{
+		margin-left: 10px;
+		width: 775px !important;
+ 
+	}
+}
+
+@media(max-width:810px) and (min-width:790px){
+    .root-container{
+		margin-left: 10px;
+		width: 750px !important;
+ 
+	}
+}
+@media(max-width:790px) and (min-width:770px){
+    .root-container{
+		margin-left: 10px;
+		width: 720px !important;
     }
 }
-    @media(max-width:615px) and (min-width:555px){
+@media(max-width:770px) and (min-width:740px){
+    .root-container{
+		margin-left: 10px;
+		width: 730px !important;
+    }
+}
+@media(max-width:740px) and (min-width:720px){
+    .root-container{
+		margin-left: 10px;
+		width: 715px !important;
+    }
+}
+@media(max-width:720px) and (min-width:700px){
+    .root-container{
+		margin-left: 10px;
+		width: 705px !important;
+    }
+}
+@media(max-width:700px) and (min-width:690px){
+    .root-container{
+		margin-left: 10px;
+		width: 670px !important;
+    }
+}
+@media(max-width:690px) and (min-width:670px){
+    .root-container{
+		margin-left: 10px;
+		width: 640px !important;
+    }
+}
+@media(max-width:670px) and (min-width:650px){
+    .root-container{
+		margin-left: 10px;
+		width: 620px !important;
+    }
+}
+@media(max-width:650px) and (min-width:630px){
+    .root-container{
+		margin-left: 10px;
+		width: 620px !important;
+    }
+}
+@media(max-width:630px) and (min-width:620px){
+    .root-container{
+        margin-left: 10px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 670px;
+        position: relative;
+        right: 30px;
+        width: 600px;
+    }
+}
+
+    @media(max-width:620px) and (min-width:600px){
         .root-container{
             margin-left: 5px;
             padding: 20px;
             border: 0.5px solid #DCDFE5;
             height: 660px;
             position: relative;
-            width: 440px;
+            width: 550px !important;
             right: 0;
         }
+}
+@media(max-width:600px) and (min-width:580px){
+	.root-container{
+		margin-left: 5px;
+		padding: 20px;
+		border: 0.5px solid #DCDFE5;
+		height: 580px;
+		position: relative;
+		width: 530px !important;
+		right: 0;
+	}
+}
+@media(max-width:580px) and (min-width:555px){
+	.root-container{
+		margin-left: 5px;
+		padding: 20px;
+		border: 0.5px solid #DCDFE5;
+		height: 660px;
+		position: relative;
+		width: 500px !important;
+		right: 0;
+	}
 }
 @media(max-width:555px) and (min-width:500px){
     .root-container{
@@ -119,7 +274,8 @@
         height: 670px;
         position: relative;
         right: 30px;
-        width: 420px;
+		width: 455px;
+		right: 0;
     }
 }
 
@@ -130,7 +286,7 @@
         border: 0.5px solid #DCDFE5;
         height: 660px;
         position: relative;
-        width: 400px;
+        width: 430px;
         /* right: 0; */
     }
 }
@@ -142,10 +298,22 @@
         height: 670px;
         position: relative;
         right: 30px;
-        width: 370px;
+        width: 400px;
     }
 }
-@media(max-width:420px) and (min-width:390px){
+@media(max-width:420px) and (min-width:400px){
+    .root-container{
+        margin-left: 10px;
+        padding-left: 20px;
+        border: 0.5px solid #DCDFE5;
+        height: 700px;
+        position: relative;
+        right: 30px;
+        width: 390px;
+    }
+}
+
+@media(max-width:400px) and (min-width:390px){
     .root-container{
         margin-left: 10px;
         padding-left: 20px;
@@ -153,7 +321,7 @@
         height: 670px;
         position: relative;
         right: 30px;
-        width: 390px;
+        width: 360px;
     }
 }
 @media(max-width:390px) and (min-width:370px){
@@ -184,7 +352,7 @@
         margin-left: 10px;
         padding-left: 20px;
         border: 0.5px solid #DCDFE5;
-        height: 610px;
+        height: 547px;
         position: relative;
         right: 30px;
         width: 290px;

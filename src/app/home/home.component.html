@@ -1,92 +1,78 @@
+<div class="container center-block">
+	<!--Nav Bar -->
+	<div class="row">
+		<h1>Your Account</h1>
+		<div class="col-md-3">
+			<div id="nav" class="bs-docs-sidebar hidden-xs hidden-sm">
+				<ul id="ul-list" style="border: 1px solid #DCDFE5;" [ngStyle]="{'height': isClicked ? '640px' : '462px'}" id="sidebar" class="nav nav-stacked">
+					<li>
+						<a [routerLink]="['app-profile']" tabindex="1" class="sidebar-links" (click)="profile()">Profile</a>
+					</li>
+					<li>
+						<a [routerLink]="['password']" tabindex="1" class="sidebar-links" (click)="password()">Password</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-notifications']" tabindex="1" class="sidebar-links" (click)="notifications()">Notifications</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-bi
+									lling-info']" tabindex="1" class="sidebar-links" (click)="billingInfo()">Billing Info</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-gift-cards']" tabindex="1" class="sidebar-links" (click)="giftCards()">Gift Cards</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-cancel-task']" tabindex="1" class="sidebar-links" (click)="cancelTask()">Cancel A Task</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-account-balance']" tabindex="1" class="sidebar-links" (click)="accountBalance()">Account Balance</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-transactions']" tabindex="1" class="sidebar-links" (click)="transactions()">Transactions</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-alexa']" tabindex="1" class="sidebar-links" (click)="alexa()">Alexa</a>
+					</li>
+					<li>
+						<a [routerLink]="['app-deactive']" tabindex="1" class="sidebar-links" (click)="deactive()">Deactive</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<!--Main Content -->
+	
+		<div style="position: relative;margin-top:20px" class="col-md-9 m10">
+			<section *ngIf="isProfile">
+				<app-profile></app-profile>
+			</section>
+			<section id="GroupB" *ngIf="isPassword" class="group">
+				<app-password></app-password>
+			</section>
+			<section id="GroupC" *ngIf="isNotifications" class="group">
+				<app-notifications></app-notifications>
+			</section>
+			<section id="GroupC" *ngIf="isBillingInfo" class="group">
+				<app-billing-info></app-billing-info>
+			</section>
+			<section id="GroupC" *ngIf="isGiftCards" class="gift-cards">
+				<app-gift-cards></app-gift-cards>
+			</section>
+			<section id="GroupC" *ngIf="isCancelTask" class="group">
+				<app-cancel-task></app-cancel-task>
+			</section>
+			<section id="GroupC" *ngIf="isAccountBalance" class="group">
+				<app-account-balance></app-account-balance>
+			</section>
+			<section id="GroupC" *ngIf="isTransactions" class="group">
+				<app-transactions></app-transactions>
+			</section>
+			<section id="GroupC" *ngIf="isAlexa" class="group">
+				<app-alexa></app-alexa>
+			</section>
+			<section id="GroupC" *ngIf="isDeactivate" class="group">
+				<app-deactive></app-deactive>
+			</section>
 
-	<!-- <h1 class="account-heading">Your Account</h1> -->
-<!-- <div id="mini-nav">
-				<div class="row">
-					<div class="form-group">
-						<div class="col-sm-2">
-							<select id="nav-select" style="	margin-left: 75px;
-							width: 670px;" class="form-control">
-								  <option>Male</option>
-								  <option>Female</option>
-								</select>
-		
-						</div>
-					</div>
-				</div>
-			</div> -->
-				  
-	
-<div  class="container col-lg-8 col-md-8 center-block" style="float: none;">
-	
-  <!--Nav Bar -->
-  <div id="nav" class="col-xs-3 bs-docs-sidebar hidden-xs hidden-sm">
-      <ul id="ul-list" style="border: 1px solid #DCDFE5;" [ngStyle]="{'height': isClicked ? '609px' : '462px'}" id="sidebar" class="nav nav-stacked">
-          <li>
-              <a [routerLink]="['app-profile']" tabindex="1" class="sidebar-links" (click)="profile()">Profile</a>
-          </li>
-          <li>
-              <a [routerLink]="['password']" tabindex="1" class="sidebar-links" (click)="password()">Password</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-notifications']" tabindex="1" class="sidebar-links" (click)="notifications()">Notifications</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-billing-info']" tabindex="1" class="sidebar-links" (click)="billingInfo()">Billing Info</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-gift-cards']" tabindex="1" class="sidebar-links" (click)="giftCards()">Gift Cards</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-cancel-task']"tabindex="1" class="sidebar-links" (click)="cancelTask()">Cancel A Task</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-account-balance']" tabindex="1" class="sidebar-links" (click)="accountBalance()">Account Balance</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-transactions']" tabindex="1" class="sidebar-links" (click)="transactions()">Transactions</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-alexa']" tabindex="1" class="sidebar-links" (click)="alexa()">Alexa</a>
-          </li>
-          <li>
-              <a [routerLink]="['app-deactive']" tabindex="1" class="sidebar-links" (click)="deactive()">Deactive</a>
-          </li>
-      </ul>
+		</div>
 	</div>
-  <!--Main Content -->
-  <div style="position: relative;margin-top:20px" class="col-xs-9">
-      <section   *ngIf="isProfile">
-          <app-profile></app-profile>
-      </section>
-      <section id="GroupB" *ngIf="isPassword" class="group">
-          <app-password></app-password>
-      </section> 
-      <section id="GroupC" *ngIf="isNotifications" class="group">
-          <app-notifications></app-notifications>
-      </section>
-      <section id="GroupC" *ngIf="isBillingInfo" class="group">
-          <app-billing-info></app-billing-info>
-      </section>
-      <section id="GroupC" *ngIf="isGiftCards" class="gift-cards">
-          <app-gift-cards></app-gift-cards>
-      </section>
-      <section id="GroupC" *ngIf="isCancelTask" class="group">
-          <app-cancel-task></app-cancel-task>
-      </section>
-      <section id="GroupC" *ngIf="isAccountBalance" class="group">
-          <app-account-balance></app-account-balance>
-      </section>
-      <section id="GroupC" *ngIf="isTransactions" class="group">
-          <app-transactions></app-transactions>
-      </section>
-      <section id="GroupC" *ngIf="isAlexa" class="group">
-          <app-alexa></app-alexa>
-      </section>
-      <section id="GroupC" *ngIf="isDeactivate" class="group">
-          <app-deactive></app-deactive>
-      </section>   
-
 </div>
-</div>
-
-<!-- <router-outlet></router-outlet> -->

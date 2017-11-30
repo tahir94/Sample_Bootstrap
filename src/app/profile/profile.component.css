@@ -1,8 +1,8 @@
-.container2{
+/* .container2{
 	border: 0.5px solid #DCDFE5;
 	height: 462px;
 	margin-bottom:20px
-}
+} */
 
 .profile-title{
 	margin-left: 15px;
@@ -10,11 +10,11 @@
 	margin-bottom: 1em;
 
 }
-.profile-container{
+/* .profile-container{
 	position: relative;
 	left: 7%;
 	width: 90%;
-}
+} */
 .btn-success.btn-inverse {
 	color: #5cb85c;
 	background-color: #fff;

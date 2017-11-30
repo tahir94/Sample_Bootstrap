@@ -115,7 +115,18 @@
 }
 
 .m10{
-	margin: 10px;
+    position: relative;
+    margin-top:20px;
+    /* margin: 10px; */
+    /* margin-left: 10px; */
+}
+
+#side-menu{
+    position: relative;
+    left: 15px;
+}
+#root-margin{
+    margin-left:5px;
 }
 
 

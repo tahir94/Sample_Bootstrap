@@ -1,8 +1,9 @@
 <div class="container center-block">
+	<!-- <div> -->
 	<!--Nav Bar -->
-	<div class="row">
+	<div style="margin-left:10px" class="row">
 		<h1>Your Account</h1>
-		<div class="col-md-3">
+		<div id="side-menu" class="col-md-3">
 			<div id="nav" class="bs-docs-sidebar hidden-xs hidden-sm">
 				<ul id="ul-list" style="border: 1px solid #DCDFE5;" [ngStyle]="{'height': isClicked ? '640px' : '462px'}" id="sidebar" class="nav nav-stacked">
 					<li>
@@ -15,8 +16,7 @@
 						<a [routerLink]="['app-notifications']" tabindex="1" class="sidebar-links" (click)="notifications()">Notifications</a>
 					</li>
 					<li>
-						<a [routerLink]="['app-bi
-									lling-info']" tabindex="1" class="sidebar-links" (click)="billingInfo()">Billing Info</a>
+						<a [routerLink]="['app-billing-info']" tabindex="1" class="sidebar-links" (click)="billingInfo()">Billing Info</a>
 					</li>
 					<li>
 						<a [routerLink]="['app-gift-cards']" tabindex="1" class="sidebar-links" (click)="giftCards()">Gift Cards</a>
@@ -41,11 +41,11 @@
 		</div>
 	<!--Main Content -->
 	
-		<div style="position: relative;margin-top:20px" class="col-md-9 m10">
+		<div class="col-md-7 col-sm-11 col-xs-11 col-md-7 col-sm-11 col-xs-11 m10">
 			<section *ngIf="isProfile">
 				<app-profile></app-profile>
 			</section>
-			<section id="GroupB" *ngIf="isPassword" class="group">
+			<section *ngIf="isPassword" >
 				<app-password></app-password>
 			</section>
 			<section id="GroupC" *ngIf="isNotifications" class="group">

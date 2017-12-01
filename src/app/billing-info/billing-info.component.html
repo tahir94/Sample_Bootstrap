@@ -1,8 +1,8 @@
-<div *ngIf="isBillingInfo" class="root-container">
-	<div class="visible-xs-block visible-sm-block">
-		<div class="row">
-			<div class="form-group">
-				<div>
+<div  class="row">
+		<div class="col-sm-12 col-lg-12" *ngIf="isBillingInfo" id="root-container">
+	<div class="visible-xs-block visible-sm-block row">
+	
+			<div class="form-group col-sm-12">
 					<select (change)="navigateTo($event.target.value)" class="form-control">
 											<option></option>
 											<option value="profile" >Profile</option>
@@ -19,20 +19,20 @@
 												</select>
 
 				</div>
-			</div>
 		</div>
-	</div>
+	
 	<h3 class="billing-heading">
 		Edit Billing Info
 	</h3>
-
-	<form style="margin-left: 10px;">
-		<div style="width: 60%;" class="form-group">
+	<form class="form">
+		<div class="row">
+		  <div class="col-md-8 col-sm-8 col-xs-9 input-fields">
+		<div class="form-group">
 			<label class="billing-label" for="exampleInputEmail1">Card Number</label>
-			<input type="email" class="form-control" id="input-field" aria-describedby="emailHelp">
+			<input class="form-control" type="email" id="input-field" aria-describedby="emailHelp">
 		</div>
 		<div>
-			<label class="billing-label" style="display : block"><div>Expiration Date</div></label>
+			<label class="billing-label"><div>Expiration Date</div></label>
 			<div style="display : inline-block" class="dropdown">
 				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true">
 				  Month
@@ -86,22 +86,23 @@
 				</ul>
 			</div>
 		</div>
-		<div id="form-container" style="width: 60%;" class="form-group">
+		<div class="col-md-12 col-xs-12" id="form-container" class="form-group">
 			<label class="billing-label" for="exampleInputEmail1">Security Code</label>
 			<input type="email" class="form-control" id="input-field" aria-describedby="emailHelp">
 
 		</div>
-		<div style="width: 60%;" class="form-group">
+		<div class="col-md-12 col-xs-12" class="form-group">
 			<label class="billing-label" for="exampleInputEmail1">Postal Code</label>
 			<input type="email" class="form-control" id="input-field" aria-describedby="emailHelp">
 		</div>
-		<div>
-			<button id="cancel-button" style="height: 49px;width: 120px" type="button" class="btn btn-default">Cancel</button>
-			<span style="margin-right:10px"></span>
-			<button id="save-button" style="height: 49px;width: 120px;" type="button" class="btn btn-success">Save</button>
+		<div >
+			<button type="button" class="col-lg-2 col-md-2 col-sm-2 btn btn-default cancel-button">Cancel</button>
+			<button  type="button" class="col-lg-2 col-md-2 col-sm-2  btn btn-success save-button">Save</button>
 		</div>
-
+	</div>
+		</div>
 	</form>
+</div>
 </div>
 
 

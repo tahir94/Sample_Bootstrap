@@ -2,6 +2,12 @@
 
 
 
+@media(max-width:450px) {
+    .input-fields{
+      width: 100% !important;
+    }
+  }
+ 
 
 #root-container{
     border: 0.5px solid #99B0DE;

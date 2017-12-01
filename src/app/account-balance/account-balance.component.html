@@ -1,9 +1,8 @@
-<div *ngIf="isAccountBalance" class="root-container">
-	<div class="visible-xs-block visible-sm-block">
-		<div class="row">
-			<div class="form-group">
-				<div>
-					<select (change)="navigateTo($event.target.value)" class="form-control">
+<div class="row">
+	<div class="col-sm-12 col-lg-12" *ngIf="isAccountBalance" id="root-container">
+		<div class="visible-xs-block visible-sm-block row">
+			<div class="form-group col-sm-12">
+				<select (change)="navigateTo($event.target.value)" class="form-control">
 											<option></option>
 											<option value="profile" >Profile</option>
 											<option value="password" >Password</option>
@@ -16,39 +15,33 @@
 											<option value="alexa" >Alexa</option>
 											<option value="deactivate" >Deactive</option>
 				
-												</select>
-
-				</div>
+			</select>
 			</div>
 		</div>
-	</div>
-	<h3 class="account-balance-title">
-		<span>Account Balance</span>
-	</h3>
-	<div class="form">
-		<p style="margin: 0 0 2.5rem 0;">
-			<strong>
+		<h3 class="account-balance-title">
+			<span>Account Balance</span>
+		</h3>
+		<div class="form">
+			<p style="margin: 0 0 2.5rem 0;">
+				<strong>
 				<span>Available account balance:</span>
 			</strong> $0
-		</p>
-		<p style="color: #545e69;margin: 0 0 50px;">
-			<span>*Account balances are automatically applied when a task is completed.</span>
-		</p>
-		<form>
-			<div id="input" style="margin-bottom: 25px;" class="form-group">
-				<label class="input-label" for="exampleInputEmail1">Enter a redemption code:</label>
-				<input style="    height: 45px;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-			</div>
-			<div>
-				<button id="apply-button" type="button" class="btn btn-success">Apply</button>
-			</div>
-		</form>
+			</p>
+			<p style="color: #545e69;margin: 0 0 50px;">
+				<span>*Account balances are automatically applied when a task is completed.</span>
+			</p>
+			<form>
+				<div id="input" style="margin-bottom: 25px;" class="form-group">
+					<label class="input-label" for="exampleInputEmail1">Enter a redemption code:</label>
+					<input style="    height: 45px;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div>
+					<button id="apply-button" type="button" class="btn btn-success">Apply</button>
+				</div>
+			</form>
+		</div>
 	</div>
-
 </div>
-
-
-
 <div>
 	<div *ngIf="isPassword">
 		<app-password></app-password>
@@ -69,7 +62,6 @@
 	<div *ngIf="isCancelTask">
 		<app-cancel-task></app-cancel-task>
 	</div>
-	<!-- <div *ngIf="isAccountBalance"><app-account-balance></app-account-balance></div> -->
 	<div *ngIf="isTransactions">
 		<app-transactions></app-transactions>
 	</div>

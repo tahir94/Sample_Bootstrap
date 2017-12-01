@@ -19,6 +19,5 @@ a:hover{
 }
 
  @media(max-width:460px){
-        /* .container2{width: 56%}; */
         #input{width: 92%}  
 }

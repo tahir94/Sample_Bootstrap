@@ -1,18 +1,8 @@
-<!-- <div class="row">
-			<div style="background:yellow" class="col-xs-12 col-md-4 col-lg-3 col-sm-6">CONTAINER 1</div>
-			<div style="background:green" class="col-xs-12 col-md-4 col-lg-3 col-sm-6">CONTAINER 2</div>
-			<div style="background:orange" class="col-xs-12 col-md-4 col-lg-3 col-sm-6">CONTAINER 3</div>
-			<div style="background:gray" class="col-xs-12 col-md-4 col-lg-3 col-sm-6">CONTAINER 4</div>
-	 </div> -->
-
-
-	<div class="row" >
-<div class="col-sm-12 col-lg-12" id="root-container" *ngIf="isProfile">
-	<div class="visible-xs-block visible-sm-block row">
-		<!-- <div class="row"> -->
+<div class="row">
+	<div class="col-sm-12 col-lg-12" id="root-container" *ngIf="isProfile">
+		<div class="visible-xs-block visible-sm-block row">
 			<div class="form-group col-sm-12">
-				<!-- <div> -->
-					<select (change)="navigateTo($event.target.value)" class="form-control">
+				<select (change)="navigateTo($event.target.value)" class="form-control">
 									<option></option>
 									<option value="profile" >Profile</option>
 									<option value="password" >Password</option>
@@ -25,57 +15,49 @@
 									<option value="alexa" >Alexa</option>
 									<option value="deactivate" >Deactive</option>
 		
-										</select>
-
-				<!-- </div> -->
-			<!-- </div> -->
+					</select>
+			</div>
 		</div>
+		<div class="header">
+			<h1>Account</h1>
+			<button type="button" class="btn btn-success btn-inverse edit-button">Edit</button>
+		</div>
+
+		<div id="profile-data" class="row">
+			<div class="col-sm-4 col-xs-8 col-md-4 img-container">
+				<img class="img-responsive image" src="../../assets/default.jpg" alt="">
+			</div>
+			<div class="col-sm-12 col-xs-12 col-md-2 profile-description">
+				<div class="profile-name-email">
+
+					<i class="material-icons">person</i>
+
+					<span>Tahir Mukhtar</span>
+				</div>
+				<!-- email -->
+				<div class="profile-name-email">
+
+					<i id="email" class="material-icons">email</i>
+
+					<span>tahirmukhtar.on@gmail.com</span>
+				</div>
+				<!-- location-->
+				<div class="profile-location">
+
+					<i class="material-icons">location_on</i>
+
+					<span>74700</span>
+					<br>
+					<div></div>
+				</div>
+				<div class="log-out">
+					<button type="button" class="btn btn-default logut-button">Log Out</button>
+				</div>
+
+			</div>
+		</div>
+
 	</div>
-	<div style="display: flex;justify-content: space-between;align-items: center;margin-bottom:50px;border-bottom: 1px solid #dce0e6;">
-		<h1>Account</h1>
-		<button style="float:right" type="button" class="btn btn-success btn-inverse">Edit</button>
-	</div>
-
-	<!-- <div class="row" style="display: flex;justify-content: flex-start;align-items: center;"> -->
-		<!-- <div id="profile-img-container" style="overflow:hidden"> -->
-		<div class="row">
-			<div class="col-sm-12 col-xs-6 col-md-10" style="overflow:hidden;text-align:center"> 
-			<!-- <img class="img-responsive" style="border-radius: 100px;height: 150px;" src="../../assets/default.jpg" alt=""> -->
-			<img class="img-responsive" style="border-radius: 100%;" src="../../assets/default.jpg" alt=""> 
-		</div>
-		<!-- <div id="profile-description" style="padding-left: 20px;"> -->
-		<div class="col-sm-12 col-xs-12 col-md-2" style="padding-left: 20px;"> 
-			<div style="display: flex;margin-bottom:15px">
-
-				<i class="material-icons">person</i>
-
-				<span>Tahir Mukhtar</span>
-			</div>
-			<!-- email -->
-			<div style="display: flex;margin-bottom:15px">
-
-				<i id="email" class="material-icons">email</i>
-
-				<span>tahirmukhtar.on@gmail.com</span>
-			</div>
-			<!-- location-->
-			<div style="display: flex;margin-bottom:10px">
-
-				<i class="material-icons">location_on</i>
-
-				<span>74700</span>
-				<br>
-				<div></div>
-			</div>
-			<div style=" float: left;display:block !important">
-				<button style="width:100px;height:40px" class="cancel-button" type="button" class="btn btn-default">Log Out</button>
-			</div>
-
-		</div>
-	<!-- </div> -->
-</div>
-
-</div>
 </div>
 <div>
 	<div *ngIf="isPassword">
@@ -109,46 +91,3 @@
 		<app-deactive></app-deactive>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

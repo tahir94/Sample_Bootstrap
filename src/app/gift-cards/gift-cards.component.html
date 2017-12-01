@@ -1,9 +1,9 @@
-<div *ngIf="isGiftCards" id="gift-card" class="root-container">
-	<div class="visible-xs-block visible-sm-block">
-		<div class="row">
-			<div class="form-group">
-				<div>
-					<select (change)="navigateTo($event.target.value)" class="form-control">
+<div class="row">
+	<div class="col-sm-12 col-lg-12" *ngIf="isGiftCards" id="root-container">
+		<div class="visible-xs-block visible-sm-block row">
+
+			<div class="form-group col-sm-12">
+				<select (change)="navigateTo($event.target.value)" class="form-control">
 											<option></option>
 											<option value="profile" >Profile</option>
 											<option value="password" >Password</option>
@@ -16,56 +16,61 @@
 											<option value="alexa" >Alexa</option>
 											<option value="deactivate" >Deactive</option>
 				
-												</select>
-
-				</div>
+			</select>
 			</div>
 		</div>
-	</div>
-	<h3 class="gift-heading">
-		Gift Cards
-	</h3>
+		<h3 class="gift-heading">
+			Gift Cards
+		</h3>
 
+		<div class="table-responsive borderless">
+			<table>
+				<tbody>
+					<tr>
+						<td class="col-lg-5 col-sm-5 col-md-5 col-xs-10">
+							<div class="img-container">
+								<img class="img-responsive gift-img" src="../../assets/gift_cards.png" alt="">
+							</div>
+						</td>
+						<td class="col-lg-7 col-sm-7 col-md-7 col-xs-2">
+							<h5 class="sub-heading">Give the gift of time!</h5>
+							<p>
+								<span>Now you can purchase TaskRabbit Gift Cards to share with friends, family, and coworkers</span>
+							</p>
 
-	<div style="padding: 30px;">
-		<!-- <tbody> -->
-		<div class="row">
-			<div class="col-md-4">
-				<div style="display: flex; justify-content: center;">
-					<img class="img-responsive" src="../../assets/gift_cards.png" alt="">
-				</div>
-			</div>
-			<div class="col-md-8" style="display: flex; align-items: center; flex-direction: column; text-align: center;">
-				<h5 class="sub-heading">Give the gift of time!</h5>
-				<p class="gift-para">Now you can purchase TaskRabbit Gift Cards to share with friends, family, and coworkers.</p>
-				<div class="form-div" class="form-group">
-					<label class="gitft-label" for="exampleInputEmail1">Gift Card Value</label>
-					<span style="display:flex"><span class="dollar-span">$</span><input type="number" class="form-control" style="width: 100%;"
-					 id="exampleInputEmail1" aria-describedby="emailHelp"></span>
-					<div style="margin-top: 15px; margin-left: 18px;">
-						<button style="height: 48px;
-							width : 120px" class="cancel-button" type="button" class="btn btn-default">Cancel</button>
-						<span style="margin-right:10px"></span>
-						<button style="width: 140px;
-							height: 50px  " class="purchase-button" type="button" class="btn btn-success">Purchase</button>
-					</div>
-					<hr class="hr">
-				</div>
-				<p>
+							<form>
+								<div class="form-container">
 
-					We will charge the credit card on file for the value of the Gift Card at time of purchase. Purchased Gift Cards will be delivered
-					as a PDF to your <a style="color : green"> email address</a>.</p>
-				<span class="spacing"></span>
-				<p>
-					When the recipient books and completes tasks, their gift card balance will be deducted from the labor cost of those tasks
-					until the Gift Card balance is fulfilled. Gift Card balances cannot be used for reimbursements. Other fees may apply.
-					TaskRabbit is only available in certain <a style="color : green"> locations </a> and not nationwide.</p>
-			</div>
+									<label class="gift-label" for="">
+								 <span>Gift Card Value</span>
+							 </label>
+									<div>
+										<span class="dollar-span">$</span>
+										<input class="form-control form-input" type="number">
+									</div>
+									<div>
+										<button type="button" class="col-lg-3 col-md-4 col-sm-4 btn btn-default cancel-button m-15 set-width">Cancel</button>
+										<button type="button" class="col-lg-3 col-md-4 col-sm-4 btn btn-success save-button m-15">Purchase</button>
+									</div>
+									<hr class="horizontal-line">
+								</div>
+							</form>
+							<br>
+							<div>
+								<p><span>We will charge the credit card on file for the value of the Gift Card at time of purchase. Purchased Gift Cards will be delivered
+						as a PDF to your <a style="color : green"> email address</a>.</span></p>
+
+								<p class="last-para"><span>When the recipient books and completes tasks, their gift card balance will be deducted from the labor cost of those tasks
+						until the Gift Card balance is fulfilled. Gift Card balances cannot be used for reimbursements. Other fees may apply.
+						TaskRabbit is only available in certain <a style="color : green"> locations </a> and not nationwide.</span></p>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-		<!-- </tbody> -->
 	</div>
 </div>
-
 
 <div>
 	<div *ngIf="isPassword">
@@ -81,7 +86,6 @@
 	<div *ngIf="isProfile">
 		<app-profile></app-profile>
 	</div>
-	<!-- <div *ngIf="isGiftCards"><app-gift-cards></app-gift-cards></div> -->
 	<div *ngIf="isCancelTask">
 		<app-cancel-task></app-cancel-task>
 	</div>

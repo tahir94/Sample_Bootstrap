@@ -1,109 +1,74 @@
-.container2{
-    border: 0.5px solid #DCDFE5;
-}
-.demo{
-	border:1px solid;
-	width: 100%
+
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
-#gift-card{
+#gift-card {
 	height:640px !important;
 }
 
-@media screen and (max-width:990px) and (min-width: 266px) {
-	#gift-card{
-		height:1350px !important;
-	}
+.m-15 {
+	margin-top : 15px;
 }
 
-
-@media(max-width:610px) {
-
-	.first-td-image{width: 125px !important}
+.gift-img {
+	height:270px
 }
 
-@media(max-width:620px){
-	.para{
-		height: 26px;
-		width: 500px;
-		overflow-y:scroll
-	}
+.form-container { 
+	margin-bottom:30px
 }
-	/* media query */
-	@media(max-width:1118px){
-		#gift-table{width: 88%}
-		
-	}	
-	@media(max-width:980px){
-		#gift-table{width: 85%}
-	}	
-	
 
-		@media(max-width:475px){
-				.container2{width: 58%};
-				#input{width: 94%}
-	
-		}
+.gift-label { 
+	position:relative;
+	top:15px 
+}
 
-	
-		@media(max-width:460px){
-				/* .container2{width: 56%}; */
-				#input{width: 92%}  
-		}
-		
-/* *************************************************** */
-.gift-heading{
+.sub-heading {
+    font-size: 2.1rem;font-weight: 600;line-height: 1.6;
+}
+
+.dollar-span {
+	position: relative;
+	top: 30px;
+	margin-left: -20px;
+}
+
+.form-input {
+	width:auto;
+	height:45px
+}
+
+.horizontal-line {
+	margin-top:100px
+}
+
+.last-para {
+	margin-top:20px
+}
+
+.borderless {
+	border: 0;
+}
+
+.gift-heading {
     margin-left: 10px;
     border-bottom: 1px solid #dce0e6;
     font-weight: 600;
     margin-bottom: 1.2em;
 }
 
-.first-td{
-    position: relative;left: 10px;
-}
-.second-td{
-    width: 400px;left: 80px;position: relative;
-}
-.sub-heading{
-    font-size: 2.1rem;font-weight: 600;line-height: 1.6;
-}
-.gift-para{
-    line-height: 1.8;color: #242A30;margin: 0 0 1.5rem 0;
-}
-.form-div{
-    width: 60%;
-}
-.gitft-label{
-font-weight: 300 !important;
+.gift-label {
+	font-weight: 300 !important;
 }
 
-.dollar-span{
-    margin-right: 10px;
-    top: 10px;
-    position: relative;  
-}
-.cancel-button{
-height: 48px;
-width : 120px
-}
-.purchase-button{
-width: 140px;
-height: 50px    
-}
-.hr{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    border: 1px solid transparent;
-    border-top-color: #dce0e6;
-}
-.para{
-    line-height: 1.7;
-}
-.spacing{
-margin: 9px
+	/* media query */
+
+@media screen and (max-width:765px) and (min-width: 200px) {
+		.set-width{width:90px !important}
 }
 
-
-
-
+@media screen and (max-width:450px) and (min-width: 200px) {
+		.img-container{width: 100px}
+}

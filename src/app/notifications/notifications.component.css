@@ -15,17 +15,17 @@
 	width : 60%;
 	margin-left: 15px;
 }
-@media(max-width:480px) and (min-width:450px) {
-	#notify-table{
+/* @media(max-width:480px) and (min-width:450px) { */
+	/* #notify-table{ */
 		/* margin-left: 15px; */
-}
-}
-	@media(max-width:380px) and (min-width:350px) {
-		#notify-table{
+/* } */
+/* } */
+	/* @media(max-width:380px) and (min-width:350px) {
+		#notify-table{ */
 			/* margin-left: 15px; */
-			width: 15px
+			/* width: 15px
 		}
-}
+} */
 
 /* for buttons */
 @media(max-width:480px) and (min-width:450px) {
@@ -53,7 +53,7 @@
 					width:152%;
 				}
 				}
-@media(max-width:380px){
+/* @media(max-width:380px){
     #notify-table{width:20% !important}; 
-    }
+    } */
 

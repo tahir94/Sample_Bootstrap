@@ -1,19 +1,11 @@
-.container2{
-    border: 0.5px solid #DCDFE5;
-    height: 462px;
-}
+
 .canel-title{
     margin-left: 10px;
     border-bottom: 1px solid #dce0e6;
     margin-bottom: 1em;
     font-weight: 600;
 }
-.div-para{
-    margin-left: 10px;
-    width: 90%;
-    text-align: center;
-    
-}
+
 .para{
     text-align: justify;
     margin: 0 0 1.5rem 0;
@@ -23,13 +15,6 @@
     text-align: justify;
     text-justify: inter-word;
 }
-.div-image{
-    margin-top: 25px;
-    margin-left: 15px;
-}
-.cancel-image{
-    width: 580px;
-}
 
 .dashboard-link{
     font-size: 2rem;
@@ -37,76 +22,13 @@
     text-decoration: none;
     font-weight: normal;
 }
+
 a:hover{
     color:#1f6507
 }
+
 .link-div{
     margin-left: 20px;
 }
 
  
-@media screen and (max-width:950px) and (min-width: 900px) {
-	.container2{width: 87%};
-	.cancel-image{width: 400px !important}
-}
-@media screen and (max-width:900px) and (min-width: 850px) {
-	.container2{width: 84%};
-	.cancel-image{width: 400px !important}
-}
-
-@media screen and (max-width:700px) and (min-width: 650px) {
-	.container2{width: 76%};
-	.cancel-image{width: 350px !important}
-}
-@media screen and (max-width:650px) and (min-width: 600px) {
-	.container2{width: 70%};
-	.cancel-image{width: 400px}
-}
-
-@media screen and (max-width:600px) and (min-width: 550px) {
-	.container2{width: 68%};
-	.cancel-image{width: 400px}
-}
-
-
-/* **************** */
-@media(max-width:755px){
-.cancel-image{width: 510px}
-}
-@media(max-width:655px){
-	.cancel-image{width: 430px};
-	.para{width: 70%;}
-}
-@media(max-width:550px){
-	.cancel-image{width: 380px}
-}
-@media(max-width:475px){
-		
-     .cancel-image{width: 360px;}
-}
-@media(max-width:450px){
-			
-	.cancel-image{width: 340px;}
-}
-@media(max-width:415px){
-				
-	.cancel-image{width: 310px;}
-}
-@media(max-width:390px){
-					
-	.cancel-image{width: 280px;}
-}	
-@media(max-width:350px){
-						
-	.cancel-image{width: 270px;}
-}
-@media(max-width:300px){
-	.cancel-image{width: 217px;}
-}										
-/* for paragraph media query  */
-@media(max-width:550px){
-	.para{width: 39% !important ;}
-}
-@media(max-width:480px){
-	.para{width: 35% !important ;}
-}

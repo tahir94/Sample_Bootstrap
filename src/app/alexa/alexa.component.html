@@ -1,56 +1,57 @@
-<div *ngIf="isAlexa" class="root-container">
-	<div class="visible-xs-block visible-sm-block">
-		<div class="row">
-			<div class="form-group">
-				<div>
-					<select (change)="navigateTo($event.target.value)" class="form-control">
-											<option></option>
-											<option value="profile" >Profile</option>
-											<option value="password" >Password</option>
-											<option value="notification" >Notifications</option>
-											<option value="billingInfo" >Billing Info</option>
-											<option value="giftCards" >Gift Cards</option>
-											<option value="cancelTask" >Cancel A Task</option>
-											<option value="accountBalaance" >Account Balance</option>
-											<option value="transactions" >Transactions</option>
-											<option value="alexa" >Alexa</option>
-											<option value="deactivate" >Deactive</option>
-				
-												</select>
+<div *ngIf="isAlexa" class="row">
+	<div class="col-sm-12 col-lg-12" id="root-container">
 
-				</div>
+		<!-- min nav -->
+		<div class="visible-xs-block visible-sm-block row">
+			<div class="form-group col-sm-12">
+				<select id="divisiondrpdwn" (change)="navigateTo($event.target.value)" class="form-control">
+											<option></option>
+											<option value="profile">Profile</option>
+											<option value="password">Password</option>
+											<option value="notification">Notifications</option>
+											<option value="billingInfo">Billing Info</option>
+											<option value="giftCards">Gift Cards</option>
+											<option value="cancelTask">Cancel A Task</option>
+											<option value="accountBalaance">Account Balance</option>
+											<option value="transactions">Transactions</option>
+											<option value="alexa">Alexa</option>
+											<option value="deactivate">Deactive</option>
+				
+					</select>
 			</div>
 		</div>
-	</div>
-	<h3 class="alexa-title">
-		Alexa
-	</h3>
-	<div class="alexa-paras">
-		<p style="margin-bottom:1.5em">Alexa uses your home location and saved credit card when booking Tasks.</p>
-		<p style="margin-bottom:1.5em"><strong>Home Location</strong>
-			<span style="margin-left: 1rem;">
+
+		<!-- title of the page -->
+		<h3 class="alexa-title">
+			Alexa
+		</h3>
+
+		<!-- remaining description of the page -->
+		<div class="alexa-paras">
+			<p style="margin-bottom:1.5em">Alexa uses your home location and saved credit card when booking Tasks.</p>
+			<p style="margin-bottom:1.5em"><strong>Home Location</strong>
+				<span style="margin-left: 1rem;">
 		<span>none</span></span>
-			<a (click)="homeLocation()" routerLink="app-alexa/edit" class="alexa-link">Add</a>
-		</p>
+				<a (click)="homeLocation()" routerLink="app-alexa/edit" class="alexa-link">Add</a>
+			</p>
 
-		<p><strong>Credit Card</strong>
-			<span style="margin-left: 1rem;">
+			<p><strong>Credit Card</strong>
+				<span style="margin-left: 1rem;">
 			<span>none</span></span>
-			<a (click)="AddCredit()" data-target-id="billing-info" class="alexa-link">Add</a>
-		</p>
+				<a (click)="AddCredit()" data-target-id="billing-info" class="alexa-link">Add</a>
+			</p>
+		</div>
 	</div>
 </div>
-<div *ngIf="isBillingInfo" id="billing-info">
-	<app-billing-info></app-billing-info>
-</div>
-
-<div *ngIf="isAlexaEdit">
-	<app-alexa-edit></app-alexa-edit>
-</div>
 
 
+
+<!-- change routes when user wants to change the page -->
 
 <div>
+	<div *ngIf="isAlexaEdit">
+		<app-alexa-edit></app-alexa-edit>
+	</div>
 	<div *ngIf="isPassword">
 		<app-password></app-password>
 
@@ -76,7 +77,6 @@
 	<div *ngIf="isTransactions">
 		<app-transactions></app-transactions>
 	</div>
-	<!-- <div *ngIf="isAlexa"><app-alexa></app-alexa></div> -->
 	<div *ngIf="isDeactivate">
 		<app-deactive></app-deactive>
 	</div>

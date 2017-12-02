@@ -22,7 +22,6 @@ export class DeactiveComponent implements OnInit {
 
 	}
 	navigateTo(event) {
-		console.log(event);
 		switch (event) {
 
 			case 'profile':

@@ -24,7 +24,7 @@
 	#apply-button{width:35%}
 }
 
-/* for input */
+/* for input field*/
 @media(max-width:460px){
       #input{width: 92%}  
 }

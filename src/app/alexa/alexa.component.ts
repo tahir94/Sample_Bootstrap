@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+declare var jquery: any;
+declare var $: any;
 @Component({
 	selector: 'app-alexa',
 	templateUrl: './alexa.component.html',
@@ -20,20 +22,19 @@ export class AlexaComponent implements OnInit {
 	constructor(private router: Router) { }
 
 	ngOnInit() {
+		
 	}
 	AddCredit() {
-		// this.router.navigate(['home/app-billing-info'])
 		this.isBillingInfo = true;
 		this.isAlexa = false;
 	}
 	homeLocation() {
 		this.isAlexa = false;
 		this.isAlexaEdit = true;
+		this.router.navigate(['home/app-alexa/edit'])
 	}
 	navigateTo(event) {
-		console.log(event);
 		switch (event) {
-
 
 			case 'profile':
 				this.router.navigate(['home/app-profile']);

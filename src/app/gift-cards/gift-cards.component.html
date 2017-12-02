@@ -1,5 +1,7 @@
 <div class="row">
-	<div class="col-sm-12 col-lg-12" *ngIf="isGiftCards" id="root-container">
+	<div class="col-sm-12 col-lg-12 set-height" *ngIf="isGiftCards" id="root-container">
+		
+		<!-- min nav -->
 		<div class="visible-xs-block visible-sm-block row">
 
 			<div class="form-group col-sm-12">
@@ -72,6 +74,7 @@
 	</div>
 </div>
 
+<!-- change routes when user wants to change the page -->
 <div>
 	<div *ngIf="isPassword">
 		<app-password></app-password>

@@ -26,21 +26,67 @@ export class HomeComponent implements OnInit {
 
 
 	constructor(private router: Router, private activatedRoute: ActivatedRoute) {
-		setTimeout(() => {
-			console.log(this.router.url)
-			this.activatedRoute.params.subscribe((data) => {
-				console.log('dddddddd', data)
-			})
-		}, 2000);
+	this.checkRoutes()
+		
 		$('body').scrollspy({
 			target: '.bs-docs-sidebar',
 			offset: 40
 		});
+
+		
 	}
 
 	ngOnInit() {
 	}
+	checkRoutes(){
+		
+		switch(this.router.url){
 
+			case '/home/password':			
+			this.password();
+			break;
+
+			case '/home/app-notifications':
+			this.notifications();
+			break;
+			
+			case '/home/app-billing-info':
+			this.billingInfo();
+			break;
+
+			case '/home/app-gift-cards':
+			this.giftCards();			
+			break;
+			
+			case '/home/app-cancel-task':
+			this.cancelTask();						
+			break;
+
+			case '/home/app-account-balance':
+			this.accountBalance();			
+			break;
+
+			case '/home/app-transactions':
+			this.transactions();			
+			break;
+
+			case '/home/app-alexa':
+			this.alexa();			
+			break;
+			
+			case '/home/app-deactive':
+			this.deactive();			
+			break;
+
+			case '/home/app-profile':
+			this.profile();			
+			break;
+			
+		
+			default:
+			return null;
+		}
+	}
 	profile() {
 		this.isProfile = true;
 

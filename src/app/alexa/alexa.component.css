@@ -1,7 +1,4 @@
-.container2{
-    border: 0.5px solid #DCDFE5;
-    height: 462px;
-}
+
 .alexa-title{
     margin-left: 15px;
     border-bottom: 1px solid #dce0e6;
@@ -23,11 +20,8 @@ a:hover{
     color:#1f6507
 }
 
-
-
-    @media(max-width:460px){
-        /* .container2{width: 56%}; */
+@media(max-width:460px){
         #input{width: 92%}  
-	}
+}
 	
 

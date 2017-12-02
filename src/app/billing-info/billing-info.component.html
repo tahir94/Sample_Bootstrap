@@ -1,5 +1,7 @@
-<div class="row">
-	<div class="col-sm-12 col-lg-12" *ngIf="isBillingInfo" id="root-container">
+<div *ngIf="isBillingInfo" class="row">
+	<div class="col-sm-12 col-lg-12" id="root-container">
+		
+		<!-- min nav -->
 		<div class="visible-xs-block visible-sm-block row">
 
 			<div class="form-group col-sm-12">
@@ -29,7 +31,7 @@
 				<div class="col-md-8 col-sm-8 col-xs-9 input-fields">
 					<div class="form-group">
 						<label class="billing-label" for="exampleInputEmail1">Card Number</label>
-						<input class="form-control" type="email" id="input-field" aria-describedby="emailHelp">
+						<input class="form-control input-height" type="email" id="input-field" aria-describedby="emailHelp">
 					</div>
 					<div>
 						<label class="billing-label"><div>Expiration Date</div></label>
@@ -88,12 +90,12 @@
 					</div>
 					<div class="col-md-12 col-xs-12" id="form-container" class="form-group">
 						<label class="billing-label" for="exampleInputEmail1">Security Code</label>
-						<input type="email" class="form-control" id="input-field" aria-describedby="emailHelp">
+						<input type="email" class="form-control input-height" id="input-field" aria-describedby="emailHelp">
 
 					</div>
 					<div class="col-md-12 col-xs-12" class="form-group">
 						<label class="billing-label" for="exampleInputEmail1">Postal Code</label>
-						<input type="email" class="form-control" id="input-field" aria-describedby="emailHelp">
+						<input type="email" class="form-control input-height" id="input-field" aria-describedby="emailHelp">
 					</div>
 					<div>
 						<button type="button" class="col-lg-2 col-md-2 col-sm-2 btn btn-default cancel-button">Cancel</button>
@@ -106,7 +108,7 @@
 </div>
 
 
-
+<!-- change routes when user wants to change the page -->
 <div>
 	<div *ngIf="isPassword">
 		<app-password></app-password>

@@ -1,9 +1,10 @@
 <div class="row">
 	<div class="col-sm-12 col-lg-12" id="root-container" *ngIf="isProfile">
+		
+		<!-- min nav -->
 		<div class="visible-xs-block visible-sm-block row">
 			<div class="form-group col-sm-12">
 				<select (change)="navigateTo($event.target.value)" class="form-control">
-									<option></option>
 									<option value="profile" >Profile</option>
 									<option value="password" >Password</option>
 									<option value="notification" >Notifications</option>
@@ -13,7 +14,7 @@
 									<option value="accountBalaance" >Account Balance</option>
 									<option value="transactions" >Transactions</option>
 									<option value="alexa" >Alexa</option>
-									<option value="deactivate" >Deactive</option>
+									<option value="deactivate">Deactive</option>
 		
 					</select>
 			</div>
@@ -24,10 +25,12 @@
 		</div>
 
 		<div id="profile-data" class="row">
+			<!-- profile image -->
 			<div class="col-sm-4 col-xs-8 col-md-4 img-container">
 				<img class="img-responsive image" src="../../assets/default.jpg" alt="">
 			</div>
-			<div class="col-sm-12 col-xs-12 col-md-2 profile-description">
+			<div class="col-sm-12 col-xs-12 col-md-4 profile-description">
+				<!-- username -->
 				<div class="profile-name-email">
 
 					<i class="material-icons">person</i>
@@ -41,6 +44,7 @@
 
 					<span>tahirmukhtar.on@gmail.com</span>
 				</div>
+				{{value}}
 				<!-- location-->
 				<div class="profile-location">
 
@@ -59,6 +63,8 @@
 
 	</div>
 </div>
+
+<!-- change routes when user wants to change the page -->
 <div>
 	<div *ngIf="isPassword">
 
@@ -66,7 +72,7 @@
 
 	</div>
 	<div *ngIf="isPassword"></div>
-	<div *ngIf="isNotifications">
+	<div *ngIf="value == 'isNotifications'">
 		<app-notifications></app-notifications>
 	</div>
 	<div *ngIf="isBillingInfo">

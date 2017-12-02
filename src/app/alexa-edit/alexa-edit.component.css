@@ -1,7 +1,4 @@
-.container2{
-    border: 0.5px solid #DCDFE5;
-    height: 462px;
-}
+
 .alexa-edit-title{
     margin-left: 15px;
     border-bottom: 1px solid #dce0e6;
@@ -9,7 +6,23 @@
     font-weight: 600;
     
 }
+.buttons-container {
+    padding-top: 70px;
+    margin-bottom: 57px;
+    margin-left: 15px;
+}
+.m-bottom{
+    margin-bottom:10px;
+}
 
+.input-height{
+    height:47px
+}
+
+/* media query */
+@media (max-width:990px) {
+    .buttons-container{padding-top:120px}
+}
 
 
 

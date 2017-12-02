@@ -22,7 +22,6 @@ export class PasswordComponent implements OnInit {
 	ngOnInit() {
 	}
 	navigateTo(event) {
-		console.log(event);
 		switch (event) {
 
 			case 'profile':

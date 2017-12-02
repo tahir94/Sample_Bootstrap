@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutes } from "./routes";
 
+// components imports
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NotificationsComponent } from "./notifications/notifications.component";
@@ -15,6 +16,7 @@ import { DeactiveComponent } from "./deactive/deactive.component";
 import { AlexaComponent } from "./alexa/alexa.component";
 import { AlexaEditComponent } from "./alexa-edit/alexa-edit.component";
 import { AccountBalanceComponent } from "./account-balance/account-balance.component";
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,7 @@ import { AccountBalanceComponent } from "./account-balance/account-balance.compo
   imports: [
     BrowserModule,
     AppRoutes,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

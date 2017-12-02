@@ -25,12 +25,12 @@ export class AlexaEditComponent implements OnInit {
 	}
 
 	cancel() {
-		this.isAlexaEdit = false;
 		this.isAlexa = true;
+		this.isAlexaEdit = false;
+		this.router.navigate(['home/app-alexa'])
 	}
 
 	navigateTo(event) {
-		console.log(event);
 		switch (event) {
 
 			case 'profile':

@@ -1,30 +1,4 @@
-.group {
-    height: 500px;
-    width: 720px;
-    position:fixed
-}
 
-  #mini-nav{
-	  display: none;
-	  text-align: center;
-	  position: relative;
-	  top: 220px;
-	  height: 40px;
-  }
-#demo {
-	display: none
-}
-
-  
-  #home-nav{
-	margin-left: 75px;
-    width: 670px;
-  }
-
-
-.profile{
-    width: 720px;
-}
 .gift-cards{
     width: 735px;
 }
@@ -99,9 +73,9 @@
 }
 
 #sidebar a:focus{
-    /* color: #438e29 !important; */
+    color: #438e29 !important;
     background: #f9fafb;
-    border-left: 3px solid #51af33;
+    border-left: 3px solid #51af33 !important;
 }
 #sidebar a:hover{
     border-left: 3px solid #dce0e6;
@@ -117,8 +91,6 @@
 .m10{
     position: relative;
     margin-top:20px;
-    /* margin: 10px; */
-    /* margin-left: 10px; */
 }
 
 #side-menu{

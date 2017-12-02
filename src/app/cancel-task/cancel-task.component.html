@@ -1,5 +1,7 @@
 <div class="row">
 	<div class="col-sm-12 col-lg-12" *ngIf="isCancelTask" id="root-container">
+		
+		<!-- min nav -->
 		<div class="visible-xs-block visible-sm-block row">
 			<div class="form-group col-sm-12">
 				<select (change)="navigateTo($event.target.value)" class="form-control">
@@ -36,9 +38,9 @@
 			<a href="" class="dashboard-link">Go To Dashboard</a>
 		</div>
 	</div>
-
 </div>
 
+<!-- change routes when user wants to change the page -->
 <div>
 	<div *ngIf="isPassword">
 		<app-password></app-password>

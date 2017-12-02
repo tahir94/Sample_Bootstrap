@@ -21,7 +21,6 @@ export class TransactionsComponent implements OnInit {
 	ngOnInit() {
 	}
 	navigateTo(event) {
-		console.log(event);
 		switch (event) {
 
 			case 'profile':

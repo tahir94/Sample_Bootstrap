@@ -1,9 +1,10 @@
-<div *ngIf="isAlexaEdit" class="root-container">
-	<div class="visible-xs-block visible-sm-block">
-		<div class="row">
-			<div class="form-group">
-				<div>
-					<select (change)="navigateTo($event.target.value)" class="form-control">
+<div *ngIf="isAlexaEdit" class="row">
+<div class="col-sm-12 col-lg-12"  id="root-container">
+	
+	<!-- min nav -->
+	<div class="visible-xs-block visible-sm-block row">
+		<div class="form-group col-sm-12">
+			<select (change)="navigateTo($event.target.value)" class="form-control">
 											<option></option>
 											<option value="profile" >Profile</option>
 											<option value="password" >Password</option>
@@ -16,10 +17,7 @@
 											<option value="alexa" >Alexa</option>
 											<option value="deactivate" >Deactive</option>
 				
-												</select>
-
-				</div>
-			</div>
+			</select>
 		</div>
 	</div>
 	<h3 class="alexa-edit-title">
@@ -27,25 +25,24 @@
 	</h3>
 
 	<form>
-		<div style="margin-bottom: 26px;margin-left:15px" class="form-group">
-			<input style="height:47px;float: left;width: 75%;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 m-bottom">
+			<input class="input-height" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
 			 placeholder="Enter home street address">
-			<input style="height: 47px;width: 160px;margin-left: 76%;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+			</div>
+			 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
 			 placeholder="Unit or Apt #">
 		</div>
-		<div style="margin-left:15px">
-			<button routerLink="app-alexa" (click)="cancel()" style="height: 49px;width: 120px;" type="button" class="btn btn-default">Cancel</button>
-			<span style="margin-right:10px"></span>
-			<button style="height: 49px;width: 120px;" type="button" class="btn btn-success">Save</button>
-		</div>
+		<div class="buttons-container">
+				<button class="col-lg-2 col-md-2 col-sm-2 btn btn-default cancel-button" (click)="cancel()" type="button" >Cancel</button>
+				<button class="col-lg-2 col-md-2 col-sm-2  btn btn-success save-button" type="button">Save</button>
+			</div>
 	</form>
 </div>
-<div *ngIf="isAlexa">
-	<app-alexa></app-alexa>
 </div>
 
 
-
+<!-- change routes when user wants to change the page -->
 <div>
 	<div *ngIf="isPassword">
 		<app-password></app-password>
